@@ -1,0 +1,17 @@
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Infrastructure.DataAccess.deps.json
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Infrastructure.DataAccess.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Application.Abstractions.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Application.Abstractions.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/bin/Debug/net7.0/DevMate.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.csproj.AssemblyReference.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.AssemblyInfoInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.AssemblyInfo.cs
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.csproj.CoreCompileInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.csproj.CopyComplete
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/refint/DevMate.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/DevMate.Infrastructure.DataAccess.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/Debug/net7.0/ref/DevMate.Infrastructure.DataAccess.dll

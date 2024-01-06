@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DevMate.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "DevMate.Application.Models": "1.0.0"
+        },
+        "runtime": {
+          "DevMate.Application.Contracts.dll": {}
+        }
+      },
+      "DevMate.Application.Models/1.0.0": {
+        "runtime": {
+          "DevMate.Application.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevMate.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevMate.Application.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

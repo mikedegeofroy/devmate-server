@@ -1,0 +1,11 @@
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/bin/Debug/net7.0/DevMate.Application.Models.deps.json
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/bin/Debug/net7.0/DevMate.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/bin/Debug/net7.0/DevMate.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.AssemblyInfoInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.AssemblyInfo.cs
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.csproj.CoreCompileInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/refint/DevMate.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/DevMate.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/Debug/net7.0/ref/DevMate.Application.Models.dll

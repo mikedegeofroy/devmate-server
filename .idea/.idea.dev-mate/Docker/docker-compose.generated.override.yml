@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  devmate.presentation.api:
+    build:
+      context: "/Users/mikedegeofroy/Documents/projects/parking-app-backend"
+      dockerfile: "DevMate.Presentation.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/DevMate.Presentation.API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "devmate.presentation.api:dev"
+    ports: []
+    volumes:
+    - "/Users/mikedegeofroy/.nuget/packages:/root/.nuget/packages"
+    - "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API:/app:rw"
+    - "/Users/mikedegeofroy/Documents/projects/parking-app-backend:/src:rw"
+    working_dir: "/app"
