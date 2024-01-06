@@ -1,0 +1,17 @@
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.deps.json
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Application.Abstractions.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Application.Abstractions.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/bin/Debug/net7.0/ParkingApp.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.csproj.AssemblyReference.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.AssemblyInfoInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.AssemblyInfo.cs
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.csproj.CoreCompileInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.csproj.CopyComplete
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/refint/ParkingApp.Infrastructure.DataAccess.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ParkingApp.Infrastructure.DataAccess.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Infrastructure.DataAccess/obj/Debug/net7.0/ref/ParkingApp.Infrastructure.DataAccess.dll

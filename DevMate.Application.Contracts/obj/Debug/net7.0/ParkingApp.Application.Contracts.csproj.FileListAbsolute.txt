@@ -1,0 +1,15 @@
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/bin/Debug/net7.0/ParkingApp.Application.Contracts.deps.json
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/bin/Debug/net7.0/ParkingApp.Application.Contracts.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/bin/Debug/net7.0/ParkingApp.Application.Contracts.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/bin/Debug/net7.0/ParkingApp.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/bin/Debug/net7.0/ParkingApp.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.csproj.AssemblyReference.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.AssemblyInfoInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.AssemblyInfo.cs
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.csproj.CoreCompileInputs.cache
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.csproj.CopyComplete
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/refint/ParkingApp.Application.Contracts.dll
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ParkingApp.Application.Contracts.pdb
+/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/Debug/net7.0/ref/ParkingApp.Application.Contracts.dll

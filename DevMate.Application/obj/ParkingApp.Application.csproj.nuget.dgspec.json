@@ -1,0 +1,248 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application/ParkingApp.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/ParkingApp.Application.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/ParkingApp.Application.Abstractions.csproj",
+        "projectName": "ParkingApp.Application.Abstractions",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/ParkingApp.Application.Abstractions.csproj",
+        "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/ParkingApp.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/ParkingApp.Application.Contracts.csproj",
+        "projectName": "ParkingApp.Application.Contracts",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/ParkingApp.Application.Contracts.csproj",
+        "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj",
+        "projectName": "ParkingApp.Application.Models",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj",
+        "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application/ParkingApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application/ParkingApp.Application.csproj",
+        "projectName": "ParkingApp.Application",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application/ParkingApp.Application.csproj",
+        "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/ParkingApp.Application.Abstractions.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Abstractions/ParkingApp.Application.Abstractions.csproj"
+              },
+              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/ParkingApp.Application.Contracts.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Contracts/ParkingApp.Application.Contracts.csproj"
+              },
+              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/ParkingApp.Application.Models/ParkingApp.Application.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "DependancyInjection": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
