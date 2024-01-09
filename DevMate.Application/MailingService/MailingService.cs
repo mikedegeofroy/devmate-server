@@ -1,8 +1,10 @@
-using ParkingApp.Application.Abstractions.Telegram.Services;
-using ParkingApp.Application.Contracts.Analytics;
-using ParkingApp.Application.Models;
+using DevMate.Application.Abstractions.Telegram.Services;
+using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Contracts.Mailing;
+using DevMate.Application.Models;
+using DevMate.Application.Models.Analytics;
 
-namespace ParkingApp.Application.MailingService;
+namespace DevMate.Application.MailingService;
 
 public class MailingService : IMailingService
 {

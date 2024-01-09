@@ -1,6 +1,7 @@
-using ParkingApp.Application.Abstractions.Telegram.Models;
-using ParkingApp.Application.Abstractions.Telegram.Services;
-using ParkingApp.Application.Models;
+using DevMate.Application.Abstractions.Telegram.Models;
+using DevMate.Application.Abstractions.Telegram.Services;
+using DevMate.Application.Models;
+using DevMate.Application.Models.Analytics;
 
 namespace DevMate.Infrastructure.Integration.Telegram.Services;
 

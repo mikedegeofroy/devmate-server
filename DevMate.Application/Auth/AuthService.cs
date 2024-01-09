@@ -1,6 +1,7 @@
-using ParkingApp.Application.Contracts.Analytics;
+using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Contracts.Auth;
 
-namespace ParkingApp.Application.Auth;
+namespace DevMate.Application.Auth;
 
 public class AuthService : IAuthService
 {

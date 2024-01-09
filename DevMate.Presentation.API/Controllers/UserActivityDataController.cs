@@ -1,25 +1,25 @@
+using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Models.Analytics;
 using Microsoft.AspNetCore.Mvc;
-using ParkingApp.Application.Contracts.Analytics;
-using ParkingApp.Application.Models;
 
-namespace ParkingApp.Presentation.API.Controllers;
+namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
 public class UserActivityDataController : ControllerBase
 {
 
-    private readonly IAnalyticsService _analyticsService;
+    private readonly ITelegramAnalyticsService _telegramAnalyticsService;
 
-    public UserActivityDataController(IAnalyticsService analyticsService)
+    public UserActivityDataController(ITelegramAnalyticsService telegramAnalyticsService)
     {
-        _analyticsService = analyticsService;
+        _telegramAnalyticsService = telegramAnalyticsService;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<TelegramUserModel>>> Get()
     {
-        IEnumerable<TelegramUserModel> users = await _analyticsService.GetMostActiveUsers(1600634396);
+        IEnumerable<TelegramUserModel> users = await _telegramAnalyticsService.GetMostActiveUsers(1600634396);
         return Ok(users);
     }
 }

@@ -1,15 +1,17 @@
 using Microsoft.Extensions.DependencyInjection;
-using ParkingApp.Application.Analytics;
-using ParkingApp.Application.Auth;
-using ParkingApp.Application.Contracts.Analytics;
+using DevMate.Application.Analytics;
+using DevMate.Application.Auth;
+using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Contracts.Mailing;
 
-namespace ParkingApp.Application.Extensions;
+namespace DevMate.Application.Extensions;
 
 public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplication(this IServiceCollection collection)
     {
-        collection.AddScoped<IAnalyticsService, AnalyticsService>();
+        collection.AddScoped<ITelegramAnalyticsService, TelegramAnalyticsService>();
         collection.AddScoped<IAuthService, AuthService>();
         collection.AddScoped<IMailingService, MailingService.MailingService>();
 

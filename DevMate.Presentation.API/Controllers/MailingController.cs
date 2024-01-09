@@ -1,8 +1,8 @@
+using DevMate.Application.Contracts.Mailing;
+using DevMate.Application.Models.Analytics;
 using Microsoft.AspNetCore.Mvc;
-using ParkingApp.Application.Contracts.Analytics;
-using ParkingApp.Application.Models;
 
-namespace ParkingApp.Presentation.API.Controllers;
+namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]

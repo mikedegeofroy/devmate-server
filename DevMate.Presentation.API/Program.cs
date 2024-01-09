@@ -1,5 +1,5 @@
 using DevMate.Infrastructure.Integration.Telegram.Extensions;
-using ParkingApp.Application.Extensions;
+using DevMate.Application.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -14,11 +14,6 @@ builder.Services.AddTelegramIntegration();
 
 WebApplication app = builder.Build();
 
-// await using (AsyncServiceScope scope = app.Services.CreateAsyncScope())
-// {
-//     await scope.UseInfrastructureDataAccessAsync(default);
-// }
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -26,7 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.UseCors(corsPolicyBuilder =>
         corsPolicyBuilder
-            .WithOrigins("http://localhost:5173")
+            .WithOrigins("*")
             .AllowAnyMethod()
             .AllowAnyHeader());
 }

@@ -5,7 +5,6 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-        <RootNamespace>ParkingApp.Presentation.API</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,6 +16,7 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Include="wwwroot\profile_pictures\383227581.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -24,10 +24,6 @@
       <ProjectReference Include="..\DevMate.Application.Models\DevMate.Application.Models.csproj" />
       <ProjectReference Include="..\DevMate.Application\DevMate.Application.csproj" />
       <ProjectReference Include="..\DevMate.Infrastructure.Integration.Telegram\DevMate.Infrastructure.Integration.Telegram.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="wwwroot\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -55,6 +51,33 @@
       <None Include="wwwroot\profile_pictures\897550764.png" />
       <None Include="wwwroot\profile_pictures\906816485.png" />
       <None Include="wwwroot\profile_pictures\914438292.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1079411043.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1281491.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1388790080.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1408793890.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1666632155.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1788374401.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\1799245928.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\259783391.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\361168098.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\380141181.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\383227581.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\439827083.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\481143540.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\514369356.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\552978607.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\712657937.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\728882896.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\819338545.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\867590824.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\885699244.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\888355248.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\897550764.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\906816485.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\914438292.png" />
     </ItemGroup>
 
 </Project>

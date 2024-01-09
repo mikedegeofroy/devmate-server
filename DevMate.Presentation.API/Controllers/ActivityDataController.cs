@@ -1,27 +1,26 @@
+using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Models.Analytics;
 using Microsoft.AspNetCore.Mvc;
-using ParkingApp.Application.Contracts;
-using ParkingApp.Application.Contracts.Analytics;
-using ParkingApp.Application.Models;
 
-namespace ParkingApp.Presentation.API.Controllers;
+namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
 public class ActivityDataController : ControllerBase
 {
     private readonly ILogger<ActivityDataController> _logger;
-    private readonly IAnalyticsService _analyticsService;
+    private readonly ITelegramAnalyticsService _telegramAnalyticsService;
 
-    public ActivityDataController(ILogger<ActivityDataController> logger, IAnalyticsService analyticsService)
+    public ActivityDataController(ILogger<ActivityDataController> logger, ITelegramAnalyticsService telegramAnalyticsService)
     {
         _logger = logger;
-        _analyticsService = analyticsService;
+        _telegramAnalyticsService = telegramAnalyticsService;
     }
 
-    [HttpGet]
-    public async Task<ActionResult<AnalyticsData>> Get()
+    [HttpPost]
+    public async Task<ActionResult<TelegramAnalyticsData>> Post(long id)
     {
-        AnalyticsData data = await _analyticsService.GetActivityData(1600634396);
+        TelegramAnalyticsData data = await _telegramAnalyticsService.GetActivityData(id);
         return Ok(data);
     }
 }

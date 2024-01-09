@@ -1,7 +1,8 @@
-using ParkingApp.Application.Abstractions.Telegram.Models;
-using ParkingApp.Application.Models;
+using DevMate.Application.Abstractions.Telegram.Models;
+using DevMate.Application.Models;
+using DevMate.Application.Models.Analytics;
 
-namespace ParkingApp.Application.Abstractions.Telegram.Services;
+namespace DevMate.Application.Abstractions.Telegram.Services;
 
 public interface ITelegramService
 {
