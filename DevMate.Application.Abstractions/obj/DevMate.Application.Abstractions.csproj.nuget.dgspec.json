@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {}
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {}
   },
   "projects": {
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
         "projectName": "DevMate.Application.Abstractions",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
         "projectName": "DevMate.Application.Models",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"

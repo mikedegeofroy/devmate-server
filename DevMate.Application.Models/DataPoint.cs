@@ -2,10 +2,12 @@ namespace ParkingApp.Application.Models;
 
 public class DataPoint
 {
-    public DataPoint(int id)
+    public DataPoint(int value, DateTime dateTime)
     {
-        Id = id;
+        Value = value;
+        DateTime = dateTime;
     }
 
-    public int Id { get; }
+    public int Value { get; }
+    public DateTime DateTime { get; }
 }

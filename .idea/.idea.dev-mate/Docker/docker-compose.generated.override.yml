@@ -2,7 +2,7 @@
 services:
   devmate.presentation.api:
     build:
-      context: "/Users/mikedegeofroy/Documents/projects/parking-app-backend"
+      context: "/Users/mikedegeofroy/Documents/projects/dev-mate-backend"
       dockerfile: "DevMate.Presentation.API/Dockerfile"
       target: "base"
     command: []
@@ -16,6 +16,6 @@ services:
     ports: []
     volumes:
     - "/Users/mikedegeofroy/.nuget/packages:/root/.nuget/packages"
-    - "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API:/app:rw"
-    - "/Users/mikedegeofroy/Documents/projects/parking-app-backend:/src:rw"
+    - "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API:/app:rw"
+    - "/Users/mikedegeofroy/Documents/projects/dev-mate-backend:/src:rw"
     working_dir: "/app"

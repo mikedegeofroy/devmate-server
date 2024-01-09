@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "G43TG8USmdiPtDPwvvMWIGWFaS6VpafeyDa9Ky2ZTHuDpBurXOr8Os0kAPNuPJdcmYBkKfPvry6tiPsQhMqOnQ==",
+  "success": true,
+  "projectFilePath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj",
+  "expectedPackageFiles": [
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/wtelegramclient/3.6.3/wtelegramclient.3.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,5 +1,5 @@
+using DevMate.Infrastructure.Integration.Telegram.Extensions;
 using ParkingApp.Application.Extensions;
-using ParkingApp.Infrastructure.DataAccess.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
-// builder.Services.AddInfrastructureDataAccess(configuration =>
-// {
-//     configuration.Host = "localhost";
-//     configuration.Port = 5432;
-//     configuration.Username = "postgres";
-//     configuration.Password = "postgres";
-//     configuration.Database = "postgres";
-//     configuration.SslMode = "Prefer";
-// });
+builder.Services.AddTelegramIntegration();
 
 WebApplication app = builder.Build();
 
@@ -32,12 +24,17 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors(corsPolicyBuilder =>
+        corsPolicyBuilder
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 }
 
+
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HHczY9/j/s00Mo+2fZcnQkNuf3jmSlHBmnhzIjpqsxzaNz7nGUM1LOur5m1Xdal58drdx+R50UH+mPIWg9KzNA==",
+  "dgSpecHash": "Y0dcANVdPZ9CP/184loSUmE9HmnERWoZX1iXaWAKfMq2DjERQLCdupNrPDpgw40NKPDbVqzuXfWKe9wPiJ9JBg==",
   "success": true,
-  "projectFilePath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj",
+  "projectFilePath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj",
   "expectedPackageFiles": [
     "/Users/mikedegeofroy/.nuget/packages/dependancyinjection/1.0.0.1/dependancyinjection.1.0.0.1.nupkg.sha512",
     "/Users/mikedegeofroy/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

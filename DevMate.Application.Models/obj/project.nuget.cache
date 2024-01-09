@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "svMV/G8ZefGKdg+LpllQVVG0w1ynWXllTZhMCt4dS/H+FMQixvNPOC3h47/sERlDRFiHep6Kp0vvO7Rgh2EQVw==",
+  "dgSpecHash": "4rDQD1kAX8Z16ovbRpbtNE5fnFSNy9cRnzcFIoDNNgU4GZ7a746I8SnJFyS9lizmjNswvAqLEY2fuh6Mr+4Law==",
   "success": true,
-  "projectFilePath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+  "projectFilePath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

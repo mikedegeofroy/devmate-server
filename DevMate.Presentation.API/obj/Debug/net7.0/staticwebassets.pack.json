@@ -1,0 +1,117 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1079411043.png",
+      "PackagePath": "staticwebassets/profile_pictures/1079411043.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1281491.png",
+      "PackagePath": "staticwebassets/profile_pictures/1281491.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1388790080.png",
+      "PackagePath": "staticwebassets/profile_pictures/1388790080.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1408793890.png",
+      "PackagePath": "staticwebassets/profile_pictures/1408793890.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1666632155.png",
+      "PackagePath": "staticwebassets/profile_pictures/1666632155.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1788374401.png",
+      "PackagePath": "staticwebassets/profile_pictures/1788374401.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/1799245928.png",
+      "PackagePath": "staticwebassets/profile_pictures/1799245928.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/259783391.png",
+      "PackagePath": "staticwebassets/profile_pictures/259783391.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/361168098.png",
+      "PackagePath": "staticwebassets/profile_pictures/361168098.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/380141181.png",
+      "PackagePath": "staticwebassets/profile_pictures/380141181.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/383227581.png",
+      "PackagePath": "staticwebassets/profile_pictures/383227581.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/439827083.png",
+      "PackagePath": "staticwebassets/profile_pictures/439827083.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/481143540.png",
+      "PackagePath": "staticwebassets/profile_pictures/481143540.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/514369356.png",
+      "PackagePath": "staticwebassets/profile_pictures/514369356.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/552978607.png",
+      "PackagePath": "staticwebassets/profile_pictures/552978607.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/712657937.png",
+      "PackagePath": "staticwebassets/profile_pictures/712657937.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/728882896.png",
+      "PackagePath": "staticwebassets/profile_pictures/728882896.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/819338545.png",
+      "PackagePath": "staticwebassets/profile_pictures/819338545.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/867590824.png",
+      "PackagePath": "staticwebassets/profile_pictures/867590824.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/885699244.png",
+      "PackagePath": "staticwebassets/profile_pictures/885699244.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/888355248.png",
+      "PackagePath": "staticwebassets/profile_pictures/888355248.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/897550764.png",
+      "PackagePath": "staticwebassets/profile_pictures/897550764.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/906816485.png",
+      "PackagePath": "staticwebassets/profile_pictures/906816485.png"
+    },
+    {
+      "Id": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/wwwroot/profile_pictures/914438292.png",
+      "PackagePath": "staticwebassets/profile_pictures/914438292.png"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.DevMate.Presentation.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.DevMate.Presentation.API.props",
+      "PackagePath": "build\\DevMate.Presentation.API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.DevMate.Presentation.API.props",
+      "PackagePath": "buildMultiTargeting\\DevMate.Presentation.API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.DevMate.Presentation.API.props",
+      "PackagePath": "buildTransitive\\DevMate.Presentation.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

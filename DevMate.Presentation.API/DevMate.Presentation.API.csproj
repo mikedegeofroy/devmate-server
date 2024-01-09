@@ -23,7 +23,38 @@
       <ProjectReference Include="..\DevMate.Application.Contracts\DevMate.Application.Contracts.csproj" />
       <ProjectReference Include="..\DevMate.Application.Models\DevMate.Application.Models.csproj" />
       <ProjectReference Include="..\DevMate.Application\DevMate.Application.csproj" />
-      <ProjectReference Include="..\DevMate.Infrastructure.DataAccess\DevMate.Infrastructure.DataAccess.csproj" />
+      <ProjectReference Include="..\DevMate.Infrastructure.Integration.Telegram\DevMate.Infrastructure.Integration.Telegram.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\profile_pictures\1079411043.png" />
+      <None Include="wwwroot\profile_pictures\1281491.png" />
+      <None Include="wwwroot\profile_pictures\1388790080.png" />
+      <None Include="wwwroot\profile_pictures\1408793890.png" />
+      <None Include="wwwroot\profile_pictures\1666632155.png" />
+      <None Include="wwwroot\profile_pictures\1788374401.png" />
+      <None Include="wwwroot\profile_pictures\1799245928.png" />
+      <None Include="wwwroot\profile_pictures\259783391.png" />
+      <None Include="wwwroot\profile_pictures\361168098.png" />
+      <None Include="wwwroot\profile_pictures\380141181.png" />
+      <None Include="wwwroot\profile_pictures\383227581.png" />
+      <None Include="wwwroot\profile_pictures\439827083.png" />
+      <None Include="wwwroot\profile_pictures\481143540.png" />
+      <None Include="wwwroot\profile_pictures\514369356.png" />
+      <None Include="wwwroot\profile_pictures\552978607.png" />
+      <None Include="wwwroot\profile_pictures\712657937.png" />
+      <None Include="wwwroot\profile_pictures\728882896.png" />
+      <None Include="wwwroot\profile_pictures\819338545.png" />
+      <None Include="wwwroot\profile_pictures\867590824.png" />
+      <None Include="wwwroot\profile_pictures\885699244.png" />
+      <None Include="wwwroot\profile_pictures\888355248.png" />
+      <None Include="wwwroot\profile_pictures\897550764.png" />
+      <None Include="wwwroot\profile_pictures\906816485.png" />
+      <None Include="wwwroot\profile_pictures\914438292.png" />
     </ItemGroup>
 
 </Project>

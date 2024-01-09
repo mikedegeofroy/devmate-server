@@ -1,6 +1,10 @@
+using ParkingApp.Application.Models;
+
 namespace ParkingApp.Application.Contracts.Analytics;
 
 public interface IAnalyticsService
 {
-    IEnumerable<Models.DataPoint> GetActivityData();
+    Task<AnalyticsData> GetActivityData(long id);
+
+    Task<IEnumerable<Models.TelegramUserModel>> GetMostActiveUsers(long id);
 }

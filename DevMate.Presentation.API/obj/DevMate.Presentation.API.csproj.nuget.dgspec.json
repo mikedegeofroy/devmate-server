@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj": {}
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj": {}
   },
   "projects": {
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
         "projectName": "DevMate.Application.Abstractions",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj",
         "projectName": "DevMate.Application.Contracts",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
               }
             }
           }
@@ -118,14 +118,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
         "projectName": "DevMate.Application.Models",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -171,14 +171,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj",
         "projectName": "DevMate.Application",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -193,14 +193,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj"
               },
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj"
               },
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
               }
             }
           }
@@ -244,14 +244,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj",
-        "projectName": "DevMate.Infrastructure.DataAccess",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj",
+        "projectName": "DevMate.Infrastructure.Integration.Telegram",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -266,8 +266,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Abstractions/DevMate.Application.Abstractions.csproj"
               }
             }
           }
@@ -282,13 +282,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Itmo.Dev.Platform.Postgres": {
-              "target": "Package",
-              "version": "[1.1.77, )"
-            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "WTelegramClient": {
+              "target": "Package",
+              "version": "[3.6.3, )"
             }
           },
           "imports": [
@@ -311,14 +311,14 @@
         }
       }
     },
-    "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj": {
+    "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj",
+        "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj",
         "projectName": "DevMate.Presentation.API",
-        "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj",
+        "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/DevMate.Presentation.API.csproj",
         "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-        "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Presentation.API/obj/",
+        "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Presentation.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"
@@ -333,17 +333,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Contracts/DevMate.Application.Contracts.csproj"
               },
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj"
               },
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application/DevMate.Application.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj"
               },
-              "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj": {
-                "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj"
+              "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj": {
+                "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj"
               }
             }
           }

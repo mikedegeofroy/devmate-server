@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+      "projectUniqueName": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
       "projectName": "DevMate.Application.Models",
-      "projectPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
+      "projectPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/DevMate.Application.Models.csproj",
       "packagesPath": "/Users/mikedegeofroy/.nuget/packages/",
-      "outputPath": "/Users/mikedegeofroy/Documents/projects/parking-app-backend/DevMate.Application.Models/obj/",
+      "outputPath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mikedegeofroy/.nuget/NuGet/NuGet.Config"

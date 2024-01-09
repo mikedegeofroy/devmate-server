@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevMate.Infrastructure.DataAccess", "DevMate.Infrastructure.DataAccess\DevMate.Infrastructure.DataAccess.csproj", "{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevMate.Infrastructure.Integration.Telegram", "DevMate.Infrastructure.Integration.Telegram\DevMate.Infrastructure.Integration.Telegram.csproj", "{C7153983-B088-4BF8-A93B-D762181673D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,10 +50,10 @@ Global
 		{4A8F9A36-9856-4E11-93EA-D9EB4C631A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8F9A36-9856-4E11-93EA-D9EB4C631A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8F9A36-9856-4E11-93EA-D9EB4C631A33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7153983-B088-4BF8-A93B-D762181673D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7153983-B088-4BF8-A93B-D762181673D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7153983-B088-4BF8-A93B-D762181673D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7153983-B088-4BF8-A93B-D762181673D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1F355F3A-AB4A-4458-A757-5C5E0E008623} = {FA907DDB-0C9B-45AF-A9FD-A4616E54CD8B}
@@ -61,6 +61,6 @@ Global
 		{D990A007-3BBA-4C0C-A967-BBB18FBD02F1} = {FA907DDB-0C9B-45AF-A9FD-A4616E54CD8B}
 		{62A12A64-3865-4808-A0F2-CFC3A9204CF8} = {FA907DDB-0C9B-45AF-A9FD-A4616E54CD8B}
 		{4A8F9A36-9856-4E11-93EA-D9EB4C631A33} = {0AAE099C-1434-428C-80B1-7002E46F9C3F}
-		{70F5AEAB-2027-4ACB-A2B3-5F44F60A0F29} = {A56821B8-63FA-4494-BCF9-785BA9A8380E}
+		{C7153983-B088-4BF8-A93B-D762181673D9} = {A56821B8-63FA-4494-BCF9-785BA9A8380E}
 	EndGlobalSection
 EndGlobal
