@@ -10,6 +10,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.12" />
     </ItemGroup>
 
     <ItemGroup>
@@ -17,12 +18,15 @@
         <Link>.dockerignore</Link>
       </Content>
       <Content Include="wwwroot\profile_pictures\383227581.png" />
+      <Content Remove="wwwroot\profile_pictures\**" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\DevMate.Application.Contracts\DevMate.Application.Contracts.csproj" />
       <ProjectReference Include="..\DevMate.Application.Models\DevMate.Application.Models.csproj" />
       <ProjectReference Include="..\DevMate.Application\DevMate.Application.csproj" />
+      <ProjectReference Include="..\DevMate.Infrastructure.DataAccess.PostgreSql\DevMate.Infrastructure.DataAccess.PostgreSql.csproj" />
+      <ProjectReference Include="..\DevMate.Infrastructure.FileSystem\DevMate.Infrastructure.FileSystem.csproj" />
       <ProjectReference Include="..\DevMate.Infrastructure.Integration.Telegram\DevMate.Infrastructure.Integration.Telegram.csproj" />
     </ItemGroup>
 
@@ -51,6 +55,7 @@
       <None Include="wwwroot\profile_pictures\897550764.png" />
       <None Include="wwwroot\profile_pictures\906816485.png" />
       <None Include="wwwroot\profile_pictures\914438292.png" />
+      <None Remove="wwwroot\profile_pictures\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -78,6 +83,20 @@
       <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\897550764.png" />
       <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\906816485.png" />
       <_ContentIncludedByDefault Remove="wwwroot\profile_pictures\914438292.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Extensions\" />
+      <Folder Include="wwwroot\profile_pictures\" />
+      <Folder Include="wwwroot\uploads\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="wwwroot\profile_pictures\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="wwwroot\profile_pictures\**" />
     </ItemGroup>
 
 </Project>

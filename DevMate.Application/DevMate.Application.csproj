@@ -10,11 +10,14 @@
       <ProjectReference Include="..\DevMate.Application.Abstractions\DevMate.Application.Abstractions.csproj" />
       <ProjectReference Include="..\DevMate.Application.Contracts\DevMate.Application.Contracts.csproj" />
       <ProjectReference Include="..\DevMate.Application.Models\DevMate.Application.Models.csproj" />
+      <ProjectReference Include="..\DevMate.Infrastructure.Integration.Telegram\DevMate.Infrastructure.Integration.Telegram.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="DependancyInjection" Version="1.0.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.15" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.2.0" />
     </ItemGroup>
 
     <ItemGroup>

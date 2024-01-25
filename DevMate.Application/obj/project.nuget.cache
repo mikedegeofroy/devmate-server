@@ -1,13 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0dcANVdPZ9CP/184loSUmE9HmnERWoZX1iXaWAKfMq2DjERQLCdupNrPDpgw40NKPDbVqzuXfWKe9wPiJ9JBg==",
+  "dgSpecHash": "ar369k6bhgD5amFKFayc2Z7R0men0II3hvssZZHn0zxuwqE6QKpA/yVONwZIBwzVMHDjHPMqN9R8ZBoOif4iQQ==",
   "success": true,
   "projectFilePath": "/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/DevMate.Application.csproj",
   "expectedPackageFiles": [
     "/Users/mikedegeofroy/.nuget/packages/dependancyinjection/1.0.0.1/dependancyinjection.1.0.0.1.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.15/microsoft.aspnetcore.authentication.jwtbearer.7.0.15.nupkg.sha512",
     "/Users/mikedegeofroy/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/Users/mikedegeofroy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/Users/mikedegeofroy/.nuget/packages/unity/5.8.6/unity.5.8.6.nupkg.sha512"
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.abstractions/7.2.0/microsoft.identitymodel.abstractions.7.2.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.2.0/microsoft.identitymodel.jsonwebtokens.7.2.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.logging/7.2.0/microsoft.identitymodel.logging.7.2.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/microsoft.identitymodel.tokens/7.2.0/microsoft.identitymodel.tokens.7.2.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/system.identitymodel.tokens.jwt/7.2.0/system.identitymodel.tokens.jwt.7.2.0.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/unity/5.8.6/unity.5.8.6.nupkg.sha512",
+    "/Users/mikedegeofroy/.nuget/packages/wtelegramclient/3.6.3/wtelegramclient.3.6.3.nupkg.sha512"
   ],
   "logs": [
     {

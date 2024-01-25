@@ -1,11 +1,13 @@
-using DevMate.Application.Models;
 using DevMate.Application.Models.Analytics;
+using DevMate.Application.Models.Auth;
 
 namespace DevMate.Application.Contracts.Analytics;
 
 public interface ITelegramAnalyticsService
 {
-    Task<TelegramAnalyticsData> GetActivityData(long id);
+    Task<TelegramAnalyticsData> GetActivityDataAsync(long id, UserDto user);
 
-    Task<IEnumerable<TelegramUserModel>> GetMostActiveUsers(long id);
+    Task<IEnumerable<TelegramUserModel>> GetMostActiveUsersAsync(long id, UserDto user);
+
+    Task<IEnumerable<TelegramUserModel>> GetPeersAsync(UserDto user);
 }

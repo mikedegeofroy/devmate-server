@@ -36,3 +36,5 @@
 /Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/obj/Debug/net7.0/refint/DevMate.Application.dll
 /Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/obj/Debug/net7.0/DevMate.Application.pdb
 /Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/obj/Debug/net7.0/ref/DevMate.Application.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/bin/Debug/net7.0/DevMate.Infrastructure.Integration.Telegram.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Application/bin/Debug/net7.0/DevMate.Infrastructure.Integration.Telegram.pdb

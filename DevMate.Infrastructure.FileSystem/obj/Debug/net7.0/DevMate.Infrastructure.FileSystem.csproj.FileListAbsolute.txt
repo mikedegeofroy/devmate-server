@@ -1,0 +1,17 @@
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Infrastructure.FileSystem.deps.json
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Infrastructure.FileSystem.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Infrastructure.FileSystem.pdb
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Application.Abstractions.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Application.Models.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Application.Abstractions.pdb
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/bin/Debug/net7.0/DevMate.Application.Models.pdb
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.csproj.AssemblyReference.cache
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.AssemblyInfoInputs.cache
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.AssemblyInfo.cs
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.csproj.CoreCompileInputs.cache
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.csproj.CopyComplete
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/refint/DevMate.Infrastructure.FileSystem.dll
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/DevMate.Infrastructure.FileSystem.pdb
+/Users/mikedegeofroy/Documents/projects/dev-mate-backend/DevMate.Infrastructure.FileSystem/obj/Debug/net7.0/ref/DevMate.Infrastructure.FileSystem.dll
