@@ -1,0 +1,18 @@
+﻿services:
+  devmate.presentation.api:
+    image: devmate.presentation.api
+    build:
+      context: .
+      dockerfile: DevMate.Presentation.API/Dockerfile
+    ports:
+      - "5207:80"
+      - "443:443"
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
