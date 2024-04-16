@@ -1,8 +1,5 @@
 using DevMate.Application.Abstractions.FileSystem;
-using DevMate.Application.Abstractions.Telegram.Services;
-using DevMate.Infrastructure.Integration.Telegram.User.Services;
 using NSubstitute;
-using NSubstitute.Exceptions;
 using Xunit;
 
 namespace DevMate.Infrastructure.Integration.Telegram.Tests.Services;

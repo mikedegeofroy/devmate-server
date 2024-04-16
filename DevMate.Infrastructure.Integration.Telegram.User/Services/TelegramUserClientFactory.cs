@@ -1,5 +1,4 @@
 using DevMate.Application.Abstractions.FileSystem;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Abstractions.Telegram.Services.UserClients;
 using WTelegram;
 

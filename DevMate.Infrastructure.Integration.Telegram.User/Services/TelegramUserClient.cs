@@ -1,12 +1,10 @@
 using DevMate.Application.Abstractions.FileSystem;
 using DevMate.Application.Abstractions.Telegram.Models;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Abstractions.Telegram.Services.UserClients;
 using DevMate.Application.Models.Analytics;
 using DevMate.Application.Models.Auth;
 using TL;
 using WTelegram;
-using User = TL.User;
 
 namespace DevMate.Infrastructure.Integration.Telegram.User.Services;
 

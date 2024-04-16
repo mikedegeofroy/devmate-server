@@ -1,9 +1,12 @@
-using System.Text;
+﻿using System.Text;
 using DevMate.Application.Extensions;
 using DevMate.Infrastructure.DataAccess.PostgreSql.Extensions;
 using DevMate.Infrastructure.FileSystem.Extensions;
 using DevMate.Infrastructure.Integration.Telegram.User.Extensions;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;

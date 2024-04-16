@@ -1,8 +1,9 @@
 using DevMate.Application.Contracts.Analytics;
 using DevMate.Application.Models.Event;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevMate.Presentation.API.Controllers.Events;
+namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
 [Route("/api/events/")]

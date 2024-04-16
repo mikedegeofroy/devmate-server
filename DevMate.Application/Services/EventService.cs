@@ -3,7 +3,7 @@ using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Contracts.Analytics;
 using DevMate.Application.Models.Event;
 
-namespace DevMate.Application.Events;
+namespace DevMate.Application.Services;
 
 public class EventService : IEventService
 {

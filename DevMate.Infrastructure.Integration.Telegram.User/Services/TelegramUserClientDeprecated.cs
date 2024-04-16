@@ -1,7 +1,6 @@
 using DevMate.Application.Abstractions.FileSystem;
 using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Abstractions.Telegram.Models;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Abstractions.Telegram.Services.UserClients;
 using DevMate.Application.Models.Analytics;
 using DevMate.Application.Models.Auth;

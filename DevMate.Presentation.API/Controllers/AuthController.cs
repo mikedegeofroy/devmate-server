@@ -2,7 +2,7 @@ using DevMate.Application.Contracts.Auth;
 using DevMate.Application.Models.Auth;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevMate.Presentation.API.Controllers.Auth;
+namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
 [Route("/api/auth/")]

@@ -1,7 +1,7 @@
 using DevMate.Application.Contracts.Auth;
 using DevMate.Application.Models.Auth;
 
-namespace DevMate.Application.Auth;
+namespace DevMate.Application.Services.Auth;
 
 public class TelegramAuthService : IAuthService
 {

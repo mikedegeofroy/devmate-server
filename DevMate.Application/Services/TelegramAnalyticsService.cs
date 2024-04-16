@@ -1,12 +1,11 @@
 using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Abstractions.Telegram.Models;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Abstractions.Telegram.Services.UserClients;
 using DevMate.Application.Contracts.Analytics;
 using DevMate.Application.Models.Analytics;
 using DevMate.Application.Models.Auth;
 
-namespace DevMate.Application.Analytics;
+namespace DevMate.Application.Services;
 
 public class TelegramAnalyticsService : ITelegramAnalyticsService
 {

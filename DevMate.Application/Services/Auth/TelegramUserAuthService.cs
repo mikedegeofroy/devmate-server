@@ -2,7 +2,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using DevMate.Application.Abstractions.Repositories;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Abstractions.Telegram.Services.UserClients;
 using DevMate.Application.Contracts.Auth;
 using DevMate.Application.Models.Analytics;
@@ -11,24 +10,24 @@ using DevMate.Infrastructure.FileSystem.Services;
 using DevMate.Infrastructure.Integration.Telegram.User.Services;
 using Microsoft.IdentityModel.Tokens;
 
-namespace DevMate.Application.Auth;
+namespace DevMate.Application.Services.Auth;
 
 public class TelegramUserAuthService : IAuthService
 {
     private readonly IUserRepository _userRepository;
-    private readonly ITelegramUserClient _telegramUserClient;
+    private readonly ITelegramUserClientFactory _telegramUserClientFactory;
     private static readonly Dictionary<string, TelegramUserClientDeprecated> Clients = new();
 
-    public TelegramUserAuthService(IUserRepository userRepository, ITelegramUserClient telegramUserClient)
+    public TelegramUserAuthService(IUserRepository userRepository, ITelegramUserClientFactory telegramUserClientFactory)
     {
         _userRepository = userRepository;
-        _telegramUserClient = telegramUserClient;
+        _telegramUserClientFactory = telegramUserClientFactory;
     }
 
     public AuthResult Login(string phone)
     {
         Stream store = _userRepository.GetStore(phone);
-        
+
         Clients[phone] = new TelegramUserClientDeprecated(new LocalFileSystemService(), _userRepository, phone,
             store.Length > 0 ? new MemoryStream() : store);
 
@@ -52,10 +51,12 @@ public class TelegramUserAuthService : IAuthService
         if (Clients[phone].Requests.Contains("verification_password"))
             return Task.FromResult<AuthResult>(new AuthResult.RequestPassword());
 
+        ITelegramUserClient client = _telegramUserClientFactory.GetClient();
+
         Stream? stream = Clients[phone].Store;
         if (stream != null)
         {
-            TelegramUserModel user = _telegramUserClient.GetUser(phone, stream);
+            TelegramUserModel user = client.GetUser(phone, stream);
             return Task.FromResult<AuthResult>(
                 new AuthResult.Success(new UserDto(phone, user.Photo, user.Username, CreateToken(phone))));
         }
@@ -68,12 +69,14 @@ public class TelegramUserAuthService : IAuthService
     {
         Clients[phone].VerificationPassword(password);
 
+        ITelegramUserClient client = _telegramUserClientFactory.GetClient();
+
         if (Clients[phone].Requests.Count == 0)
         {
             Stream? stream = Clients[phone].Store;
             if (stream != null)
             {
-                TelegramUserModel user = _telegramUserClient.GetUser(phone, stream);
+                TelegramUserModel user = client.GetUser(phone, stream);
                 Clients[phone].Dispose();
                 return Task.FromResult<AuthResult>(
                     new AuthResult.Success(new UserDto(phone, user.Photo, user.Username, CreateToken(phone))));
