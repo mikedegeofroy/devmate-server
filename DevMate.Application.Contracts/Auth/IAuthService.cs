@@ -4,9 +4,9 @@ namespace DevMate.Application.Contracts.Auth;
 
 public interface IAuthService
 {
-    AuthResult Login(string phone);
-    
-    Task<AuthResult> VerifyLoginCode(string phone, string code);
-    
-    Task<AuthResult> VerifyPassword(string phone, string password);
+    AuthResult Login();
+
+    AuthResult VerifyLogin(string? code);
+
+    AuthResult ApproveLogin(string? code, Models.Auth.User user);
 }

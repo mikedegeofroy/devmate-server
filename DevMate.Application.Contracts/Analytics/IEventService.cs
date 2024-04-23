@@ -4,12 +4,13 @@ namespace DevMate.Application.Contracts.Analytics;
 
 public interface IEventService
 {
-    Event? GetEventById(long id);
-    IEnumerable<Event> GetEvents();
+    EventModel? GetEventById(long id);
+    IEnumerable<EventModel> GetEvents();
 
-    Event CreateEvent(Event newEvent);
+    EventModel CreateEvent();
 
-    Event UpdateEvent(Event toUpdate);
+    EventModel UpdateEvent(EventModel toUpdate);
 
-    Event UploadCover(Event to, Stream stream);
+    EventModel UploadCover(EventModel to, Stream stream);
+    void PostEvent(long id);
 }

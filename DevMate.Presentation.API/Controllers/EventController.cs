@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
-[Route("/api/events/")]
+[Route("events")]
 public class EventController : ControllerBase
 {
     private readonly IEventService _eventService;
@@ -17,30 +17,37 @@ public class EventController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Event>> Events()
+    public ActionResult<IEnumerable<EventModel>> Events()
     {
-        IEnumerable<Event> events = _eventService.GetEvents();
+        IEnumerable<EventModel> events = _eventService.GetEvents();
 
         return Ok(events);
     }
 
     [HttpPut("update")]
-    public ActionResult<Event> UpdateEvent(Event update)
+    public ActionResult<EventModel> UpdateEvent(EventModel update)
     {
         return Ok(_eventService.UpdateEvent(update));
     }
 
     [HttpPost("create")]
-    public ActionResult<Event> CreateEvent(Event create)
+    public ActionResult<EventModel> CreateEvent()
     {
-        return Ok(_eventService.CreateEvent(create));
+        return Ok(_eventService.CreateEvent());
+    }
+    
+    [HttpPost("post")]
+    public ActionResult<EventModel> PostEvent(long id)
+    {
+        _eventService.PostEvent(id);
+        return Ok();
     }
 
     [HttpPost("upload-cover")]
-    public ActionResult<Event> UploadCover(long id, IFormFile file)
+    public ActionResult<EventModel> UploadCover(long id, IFormFile file)
     {
         Console.WriteLine(file.ContentType);
-        Event? eventById = _eventService.GetEventById(id);
+        EventModel? eventById = _eventService.GetEventById(id);
         if (eventById != null)
             return Ok(_eventService.UploadCover(eventById, file.OpenReadStream()));
         return NotFound();

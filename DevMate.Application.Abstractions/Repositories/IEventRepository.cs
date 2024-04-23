@@ -4,10 +4,10 @@ namespace DevMate.Application.Abstractions.Repositories;
 
 public interface IEventRepository
 {
-    Event? GetEventById(long id);
-    IEnumerable<Event> GetEvents();
+    EventModel? GetEventById(long id);
+    IEnumerable<EventModel> GetEvents();
 
-    Event AddEvent(Event newEvent);
+    EventModel AddEvent();
 
-    Event UpdateEvent(Event newEvent);
+    EventModel UpdateEvent(EventModel newEventModel);
 }

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DevMate.Presentation.API.Controllers;
 
 [ApiController]
-[Route("/api/auth/")]
+[Route("auth")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
@@ -16,51 +16,28 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public ActionResult<AuthResult> Login(string phone)
+    public ActionResult<AuthResult> Login()
     {
-        AuthResult result = _authService.Login(phone);
+        AuthResult result = _authService.Login();
 
         return result switch
         {
-            AuthResult.InvalidCode invalidCode => Ok(invalidCode),
-            AuthResult.InvalidPassword invalidPassword => Ok(invalidPassword),
             AuthResult.NotFound notFound => Ok(notFound),
-            AuthResult.RequestCode requestCode => Ok(requestCode),
-            AuthResult.RequestPassword requestPassword => Ok(requestPassword),
+            AuthResult.VerifyCode verifyCode => Ok(verifyCode),
             AuthResult.Success success => Ok(success),
             _ => NotFound()
         };
     }
-
-    [HttpPost("verify/code")]
-    public ActionResult<AuthResult> VerifyCode(Application.Models.Auth.User user)
+    
+    [HttpGet("verify")]
+    public ActionResult<AuthResult> VerifyLogin(string code)
     {
-        AuthResult result = _authService.VerifyLoginCode(user.Phone, user.Secret).GetAwaiter().GetResult();
+        AuthResult result = _authService.VerifyLogin(code);
 
         return result switch
         {
-            AuthResult.InvalidCode invalidCode => Ok(invalidCode),
-            AuthResult.InvalidPassword invalidPassword => Ok(invalidPassword),
             AuthResult.NotFound notFound => Ok(notFound),
-            AuthResult.RequestCode requestCode => Ok(requestCode),
-            AuthResult.RequestPassword requestPassword => Ok(requestPassword),
-            AuthResult.Success success => Ok(success),
-            _ => NotFound()
-        };
-    }
-
-    [HttpPost("verify/password")]
-    public ActionResult<AuthResult> VerifyPassword(Application.Models.Auth.User user)
-    {
-        AuthResult result = _authService.VerifyPassword(user.Phone, user.Secret).GetAwaiter().GetResult();
-
-        return result switch
-        {
-            AuthResult.InvalidCode invalidCode => Ok(invalidCode),
-            AuthResult.InvalidPassword invalidPassword => Ok(invalidPassword),
-            AuthResult.NotFound notFound => Ok(notFound),
-            AuthResult.RequestCode requestCode => Ok(requestCode),
-            AuthResult.RequestPassword requestPassword => Ok(requestPassword),
+            AuthResult.VerifyCode verifyCode => Ok(verifyCode),
             AuthResult.Success success => Ok(success),
             _ => NotFound()
         };

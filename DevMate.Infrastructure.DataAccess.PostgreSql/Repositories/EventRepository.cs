@@ -5,37 +5,71 @@ namespace DevMate.Infrastructure.DataAccess.PostgreSql.Repositories;
 
 public class EventRepository : IEventRepository
 {
-    private readonly List<Event> _events = new List<Event>
+    private readonly List<EventModel> _events = new List<EventModel>
     {
-        new Event(0, 0, "Title1", "Description", DateTime.Now, DateTime.Now.AddHours(2),
-            10, 5, 200.50,
-            ""),
-        new Event(1, 0, "Title2", "Description", DateTime.Now, DateTime.Now.AddHours(2),
-            10, 5, 200.50,
-            ""),
+        new EventModel
+        {
+            Id = 0,
+            UserId = 0,
+            Title = "This is a title 1",
+            Description = "This is some description",
+            StartDateTime = new DateTime(),
+            EndDateTime = new DateTime().AddHours(2),
+            Total = 0,
+            Occupied = 0,
+            Price = 0,
+            Cover = "null"
+        },
+        new()
+        {
+            Id = 1,
+            UserId = 0,
+            Title = "This is a title 2",
+            Description = "This is some description",
+            StartDateTime = new DateTime(),
+            EndDateTime = new DateTime().AddHours(2),
+            Total = 0,
+            Occupied = 0,
+            Price = 0,
+            Cover = "null"
+        },
     };
 
-    public Event? GetEventById(long id)
+    public EventModel? GetEventById(long id)
     {
         return _events.Find(e => e.Id == id);
     }
 
-    public IEnumerable<Event> GetEvents()
+    public IEnumerable<EventModel> GetEvents()
     {
         return _events;
     }
 
-    public Event AddEvent(Event newEvent)
+    public EventModel AddEvent()
     {
+        var newEvent = new EventModel
+        {
+            Id = 0,
+            UserId = 0,
+            Title = "This is a title",
+            Description = "This is some description",
+            StartDateTime = new DateTime(),
+            EndDateTime = new DateTime().AddHours(2),
+            Total = 0,
+            Occupied = 0,
+            Price = 0,
+            Cover = "null"
+        };
+
         _events.Add(newEvent);
         return newEvent;
     }
 
-    public Event UpdateEvent(Event newEvent)
+    public EventModel UpdateEvent(EventModel newEventModel)
     {
-        int index = _events.FindIndex(e => e.Id == newEvent.Id);
+        int index = _events.FindIndex(e => e.Id == newEventModel.Id);
         if (index > -1)
-            _events[index] = newEvent;
-        return newEvent;
+            _events[index] = newEventModel;
+        return newEventModel;
     }
 }

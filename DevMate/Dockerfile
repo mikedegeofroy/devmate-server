@@ -1,20 +1,22 @@
-﻿FROM mcr.microsoft.com/dotnet/runtime:7.0 AS base
+﻿FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["DevMate/DevMate.csproj", "DevMate/"]
-RUN dotnet restore "DevMate/DevMate.csproj"
+COPY ["DevMateTest/DevMateTest.csproj", "DevMateTest/"]
+RUN dotnet restore "DevMateTest/DevMateTest.csproj"
 COPY . .
-WORKDIR "/src/DevMate"
-RUN dotnet build "DevMate.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/DevMateTest"
+RUN dotnet build "DevMateTest.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "DevMate.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "DevMateTest.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DevMate.dll"]
+ENTRYPOINT ["dotnet", "DevMateTest.dll"]

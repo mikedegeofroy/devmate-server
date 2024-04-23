@@ -11,13 +11,7 @@ public record AuthResult
 
     public sealed record Success(UserDto User) : AuthResult("Welcome!");
 
-    public sealed record RequestCode() : AuthResult("We've sent your verification code to your telegram");
-
-    public sealed record RequestPassword() : AuthResult("Please enter your telegram password");
-
-    public sealed record InvalidCode() : AuthResult("The code is invalid, please try again.");
-
-    public sealed record InvalidPassword() : AuthResult("The password is invalid, please try again.");
+    public sealed record VerifyCode(string Code) : AuthResult("Verify through telegram bot");
 
     public sealed record NotFound() : AuthResult("No user found.");
 }

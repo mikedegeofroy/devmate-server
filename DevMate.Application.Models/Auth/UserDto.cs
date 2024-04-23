@@ -1,3 +1,3 @@
 namespace DevMate.Application.Models.Auth;
 
-public record UserDto(string Phone, string ProfilePicture, string Username, string Secret);
+public record UserDto(long Id, string ProfilePicture, string Username, string Secret);
