@@ -88,8 +88,8 @@ app.UseCors(o =>
 });
 
 app.MapControllers();
-app.RunBot();
 
+app.RunBot();
 app.MigrateUp();
 
 app.Run();

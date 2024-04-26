@@ -10,6 +10,7 @@ public static class ServiceCollectionExtensions
     {
         collection.AddSingleton<IAuthService, AuthService>();
         collection.AddScoped<IEventService, EventService>();
+        collection.AddScoped<IUserService, UserService>();
 
         return collection;
     }

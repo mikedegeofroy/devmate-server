@@ -68,7 +68,7 @@ public class AuthService : IAuthService
 
         var claims = new List<Claim>()
         {
-            new(ClaimTypes.Sid, user.Id.ToString()),
+            new(ClaimTypes.NameIdentifier, user.Id.ToString()),
         };
 
         var token = new JwtSecurityToken(claims: claims, expires: DateTime.Now.AddDays(1),
