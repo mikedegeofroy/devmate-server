@@ -8,7 +8,7 @@ namespace DevMate.Infrastructure.Integration.Telegram.UpdateHandlers;
 
 public class CallbackHandler : IUpdateHandler
 {
-    private IUpdateHandler _updateHandler;
+    private IUpdateHandler? _updateHandler;
     private readonly ICallbackHandler _callbackHandler;
 
     public CallbackHandler(IAuthService authService)
@@ -24,7 +24,7 @@ public class CallbackHandler : IUpdateHandler
             return;
         }
 
-        _updateHandler.Handle(botClient, update, cancellationToken);
+        _updateHandler?.Handle(botClient, update, cancellationToken);
     }
 
     public IUpdateHandler SetNext(IUpdateHandler handler)
