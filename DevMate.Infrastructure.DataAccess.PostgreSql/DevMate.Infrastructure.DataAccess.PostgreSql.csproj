@@ -11,8 +11,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Itmo.Dev.Platform.Postgres" Version="1.1.82" />
+      <PackageReference Include="Dapper" Version="2.1.35" />
+      <PackageReference Include="FluentMigrator.Runner" Version="5.2.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Npgsql" Version="8.0.2" />
     </ItemGroup>
 
 </Project>

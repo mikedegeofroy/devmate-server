@@ -1,75 +1,99 @@
+using System.Data;
+using Dapper;
 using DevMate.Application.Abstractions.Repositories;
+using DevMate.Application.Models.Auth;
 using DevMate.Application.Models.Event;
+using DevMate.Infrastructure.DataAccess.PostgreSql.DataSources;
 
 namespace DevMate.Infrastructure.DataAccess.PostgreSql.Repositories;
 
 public class EventRepository : IEventRepository
 {
-    private readonly List<EventModel> _events = new List<EventModel>
+    private readonly SqlDataAccess _sql;
+
+    public EventRepository(SqlDataAccess sql)
     {
-        new EventModel
-        {
-            Id = 0,
-            UserId = 0,
-            Title = "This is a title 1",
-            Description = "This is some description",
-            StartDateTime = new DateTime(),
-            EndDateTime = new DateTime().AddHours(2),
-            Total = 0,
-            Occupied = 0,
-            Price = 0,
-            Cover = "null"
-        },
-        new()
-        {
-            Id = 1,
-            UserId = 0,
-            Title = "This is a title 2",
-            Description = "This is some description",
-            StartDateTime = new DateTime(),
-            EndDateTime = new DateTime().AddHours(2),
-            Total = 0,
-            Occupied = 0,
-            Price = 0,
-            Cover = "null"
-        },
-    };
+        _sql = sql;
+    }
 
     public EventModel? GetEventById(long id)
     {
-        return _events.Find(e => e.Id == id);
+        IDbConnection connection = _sql.GetConnection();
+
+        const string query = """
+                                SELECT * FROM events WHERE id = @Id;
+                             """;
+
+        EventModel? eventModel = connection.QueryFirstOrDefault<EventModel>(query, new { Id = id });
+
+        return eventModel;
     }
 
     public IEnumerable<EventModel> GetEvents()
     {
-        return _events;
+        IDbConnection connection = _sql.GetConnection();
+
+        const string query = """
+                                SELECT * FROM events;
+                             """;
+        var events = connection.Query<EventModel>(query)
+            .Distinct()
+            .ToList();
+
+        return events;
     }
 
-    public EventModel AddEvent()
+    public EventModel AddEvent(User user)
     {
-        var newEvent = new EventModel
+        IDbConnection connection = _sql.GetConnection();
+
+        const string permalinkQuery = """
+                                          INSERT INTO events (user_id, title, description, places, occupied, price)
+                                          VALUES (@UserId, 'Title', 'Description', 10, 0, 0)
+                                          RETURNING *
+                                      """;
+
+        EventModel? model = connection.QueryFirstOrDefault<EventModel>(permalinkQuery, new
         {
-            Id = 0,
-            UserId = 0,
-            Title = "This is a title",
-            Description = "This is some description",
-            StartDateTime = new DateTime(),
-            EndDateTime = new DateTime().AddHours(2),
-            Total = 0,
-            Occupied = 0,
-            Price = 0,
-            Cover = "null"
-        };
+            UserId = user.Id
+        });
 
-        _events.Add(newEvent);
-        return newEvent;
+        return model;
     }
 
-    public EventModel UpdateEvent(EventModel newEventModel)
+    public EventModel UpdateEvent(EventModel eventModel)
     {
-        int index = _events.FindIndex(e => e.Id == newEventModel.Id);
-        if (index > -1)
-            _events[index] = newEventModel;
-        return newEventModel;
+        IDbConnection connection = _sql.GetConnection();
+
+        const string permalinkQuery = """
+                                          UPDATE events SET
+                                            user_id = @UserId,
+                                            title = @Title,
+                                            description = @Description,
+                                            places = @Places,
+                                            occupied = @Occupied,
+                                            price = @Price,
+                                            cover = @Cover,
+                                            end_datetime = @EndDatetime,
+                                            start_datetime = @StartDatetime
+                                                        WHERE id = @Id
+                                          RETURNING *
+                                      """;
+
+        EventModel? model = connection.QueryFirstOrDefault<EventModel>(permalinkQuery, new
+        {
+            eventModel.Id,
+            eventModel.UserId,
+            eventModel.Title,
+            eventModel.Description,
+            eventModel.Places,
+            eventModel.Occupied,
+            eventModel.Price,
+            eventModel.Cover,
+            eventModel.StartDateTime,
+            eventModel.EndDateTime
+        });
+
+        return model;
     }
 }

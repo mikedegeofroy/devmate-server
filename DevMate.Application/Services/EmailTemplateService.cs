@@ -1,5 +1,5 @@
 using DevMate.Application.Abstractions.Repositories;
-using DevMate.Application.Contracts.Mailing;
+using DevMate.Application.Contracts;
 using DevMate.Application.Models.Mailing;
 using Fluid;
 

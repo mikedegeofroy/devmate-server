@@ -1,6 +1,6 @@
 using DevMate.Application.Models.Auth;
 
-namespace DevMate.Application.Contracts.Auth;
+namespace DevMate.Application.Contracts;
 
 public interface IAuthService
 {

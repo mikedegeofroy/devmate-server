@@ -1,5 +1,4 @@
 using System.Text;
-using DevMate.Application.Abstractions.Telegram.Services;
 using DevMate.Application.Extensions;
 using DevMate.Infrastructure.DataAccess.Extensions;
 using DevMate.Infrastructure.DataAccess.PostgreSql.Extensions;
@@ -20,15 +19,9 @@ builder.Services.AddInfrastructureIntegrationMailgun();
 builder.Services.AddInfrastructureIntegrationTelegram();
 builder.Services.AddInfrastructureLocalFileSystem();
 builder.Services.AddInfrastructureDataAccess();
-builder.Services.AddInfrastructureDataAccessPostgreSql(configuration =>
-{
-    configuration.Host = "localhost";
-    configuration.Port = 5432;
-    configuration.Username = "postgres";
-    configuration.Password = "postgres";
-    configuration.Database = "postgres";
-    configuration.SslMode = "Prefer";
-});
+builder.Services.AddInfrastructureDataAccessPostgreSql(
+    builder.Configuration.GetSection("AppSettings:DatabaseConnectionString").Value!
+);
 
 builder.Services.AddControllers();
 
@@ -73,9 +66,6 @@ WebApplication app = builder.Build();
 
 app.UsePathBase("/api");
 
-ITelegramBot botService = app.Services.GetRequiredService<ITelegramBot>();
-botService.Start();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -98,5 +88,8 @@ app.UseCors(o =>
 });
 
 app.MapControllers();
+app.RunBot();
+
+app.MigrateUp();
 
 app.Run();

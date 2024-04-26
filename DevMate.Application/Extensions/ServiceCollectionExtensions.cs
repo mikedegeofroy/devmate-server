@@ -1,5 +1,4 @@
-using DevMate.Application.Contracts.Analytics;
-using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Contracts;
 using DevMate.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 

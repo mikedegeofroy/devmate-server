@@ -1,5 +1,8 @@
-using DevMate.Application.Contracts.Analytics;
+using System.Security.Claims;
+using System.Security.Principal;
+using DevMate.Application.Contracts;
 using DevMate.Application.Models.Event;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,18 +27,31 @@ public class EventController : ControllerBase
         return Ok(events);
     }
 
+    [Authorize]
     [HttpPut("update")]
     public ActionResult<EventModel> UpdateEvent(EventModel update)
     {
         return Ok(_eventService.UpdateEvent(update));
     }
 
+    [Authorize]
     [HttpPost("create")]
     public ActionResult<EventModel> CreateEvent()
     {
-        return Ok(_eventService.CreateEvent());
+        string? userId = User.FindFirst(ClaimTypes.Sid)?.Value;
+        
+        Console.WriteLine(string.Join(", ", User.Claims.Select(c => $"{c.Type}: {c.Value}")));
+
+        
+        if (userId == null)
+        {
+            return Unauthorized("User ID is not found in the token");
+        }
+
+        return Ok(_eventService.CreateEvent(long.Parse(userId)));
     }
-    
+
+    [Authorize]
     [HttpPost("post")]
     public ActionResult<EventModel> PostEvent(long id)
     {
@@ -43,6 +59,7 @@ public class EventController : ControllerBase
         return Ok();
     }
 
+    [Authorize]
     [HttpPost("upload-cover")]
     public ActionResult<EventModel> UploadCover(long id, IFormFile file)
     {

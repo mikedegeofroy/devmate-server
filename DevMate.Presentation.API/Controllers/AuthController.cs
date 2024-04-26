@@ -1,4 +1,4 @@
-using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Contracts;
 using DevMate.Application.Models.Auth;
 using Microsoft.AspNetCore.Mvc;
 

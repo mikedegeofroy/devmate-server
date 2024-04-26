@@ -1,14 +1,14 @@
 ﻿using DevMate.Application.Abstractions.Services;
-using DevMate.Application.Abstractions.Telegram.Services;
-using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Abstractions.Telegram;
+using DevMate.Application.Contracts;
 using DevMate.Application.Models.Event;
 using DevMate.Infrastructure.Integration.Telegram.UpdateHandlers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Telegram.Bot;
 using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
+using EventHandler = DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.EventHandler;
 
 namespace DevMate.Infrastructure.Integration.Telegram;
 
@@ -27,6 +27,7 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         _updateHandlerChain = new StartHandler();
 
         _updateHandlerChain
+            .SetNext(new EventHandler())
             .SetNext(new InvoiceHandler())
             .SetNext(new CallbackHandler(authService));
     }
@@ -42,7 +43,7 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         _logger.LogInformation("Bot is running.");
     }
 
-    private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
+    private Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
         CancellationToken cancellationToken)
     {
         try
@@ -53,6 +54,8 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         {
             _logger.LogError($"An error occurred in message handling: {ex.Message}");
         }
+
+        return Task.CompletedTask;
     }
 
     private Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception,

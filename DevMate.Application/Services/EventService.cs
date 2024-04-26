@@ -1,7 +1,8 @@
 using DevMate.Application.Abstractions.FileSystem;
 using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Abstractions.Services;
-using DevMate.Application.Contracts.Analytics;
+using DevMate.Application.Contracts;
+using DevMate.Application.Models.Auth;
 using DevMate.Application.Models.Event;
 
 namespace DevMate.Application.Services;
@@ -9,14 +10,17 @@ namespace DevMate.Application.Services;
 public class EventService : IEventService
 {
     private readonly IEventRepository _eventRepository;
+    private readonly IUserRepository _userRepository;
     private readonly IFileSystem _fileSystem;
     private readonly IEventPublisher _eventPublisher;
 
-    public EventService(IEventRepository eventRepository, IFileSystem fileSystem, IEventPublisher eventPublisher)
+    public EventService(IEventRepository eventRepository, IFileSystem fileSystem, IEventPublisher eventPublisher,
+        IUserRepository userRepository)
     {
         _eventRepository = eventRepository;
         _fileSystem = fileSystem;
         _eventPublisher = eventPublisher;
+        _userRepository = userRepository;
     }
 
     public EventModel? GetEventById(long id)
@@ -29,9 +33,10 @@ public class EventService : IEventService
         return _eventRepository.GetEvents();
     }
 
-    public EventModel CreateEvent()
+    public EventModel CreateEvent(long userId)
     {
-        return _eventRepository.AddEvent();
+        User? user = _userRepository.GetUserById(userId);
+        return user != null ? _eventRepository.AddEvent(user) : throw new Exception();
     }
 
     public EventModel UpdateEvent(EventModel toUpdate)

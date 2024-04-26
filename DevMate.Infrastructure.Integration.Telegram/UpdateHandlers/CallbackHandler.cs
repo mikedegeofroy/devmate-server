@@ -1,4 +1,4 @@
-using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Contracts;
 using DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.CallbackHandlers;
 using Telegram.Bot;
 using Telegram.Bot.Types;

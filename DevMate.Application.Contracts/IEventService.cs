@@ -1,13 +1,13 @@
 using DevMate.Application.Models.Event;
 
-namespace DevMate.Application.Contracts.Analytics;
+namespace DevMate.Application.Contracts;
 
 public interface IEventService
 {
     EventModel? GetEventById(long id);
     IEnumerable<EventModel> GetEvents();
 
-    EventModel CreateEvent();
+    EventModel CreateEvent(long userId);
 
     EventModel UpdateEvent(EventModel toUpdate);
 

@@ -1,5 +1,5 @@
 using DevMate.Application.Abstractions.Services;
-using DevMate.Application.Abstractions.Telegram.Services;
+using DevMate.Application.Abstractions.Telegram;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DevMate.Infrastructure.Integration.Telegram.Extensions;

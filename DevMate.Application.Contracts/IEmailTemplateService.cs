@@ -1,6 +1,6 @@
 using DevMate.Application.Models.Mailing;
 
-namespace DevMate.Application.Contracts.Mailing;
+namespace DevMate.Application.Contracts;
 
 public interface IEmailTemplateService
 {

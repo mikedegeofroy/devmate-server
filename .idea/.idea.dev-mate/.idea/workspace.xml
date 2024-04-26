@@ -23,283 +23,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc5811cf-07dd-47a9-a504-88e18597bcbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IEmailTemplateRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IUserCodeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Services/IEventPublisher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Services/IEventRecipient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Services/IMailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/Mailing/IEmailTemplateService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Models/Event/EventModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Models/Mailing/EmailTemplate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application.Models/Mailing/MailContent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application/Services/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Application/Services/EmailTemplateService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess/DevMate.Infrastructure.DataAccess.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess/UserCodeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Mailgun/DevMate.Infrastructure.Integration.Mailgun.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Mailgun/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Mailgun/Services/MailgunService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Mailgun/Services/MockMailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/TelegramBot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandlers/ICallbackHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandlers/LoginHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/IUpdateHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/InvoiceHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/StartHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1060257581.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1071195907.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1071609063.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1079411043.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1106088580.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1110698298.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1140259085.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1151347432.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1156621875.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1162395430.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1171678364.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1228256166.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1236870767.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1259762719.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1270446545.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1280691923.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1282558877.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1310009051.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1310111672.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1334334285.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1366309889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1374470453.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1381829108.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1388790080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1447176149.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1467324462.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1500606965.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1527051074.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1528341717.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1550475685.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1552358777.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1555938469.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1560881490.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1561097847.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1577857857.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1589473569.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1592081292.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1600634396.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1603339959.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1612368622.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1645192733.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1648216211.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1650951486.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1655750052.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1670264386.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1676104465.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1683576857.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1691714157.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1696416403.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1697683423.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1716175508.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1717022639.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1721838865.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1733126031.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1749757362.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1756045112.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1758725763.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1770872274.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1774359475.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1774934980.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1777000368.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1780121400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1788374401.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1798673537.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1800210921.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1801013774.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1830825896.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1836405197.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1843605338.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1848098612.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1848159667.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1848282858.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1854803518.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1859611296.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1874876064.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1879740933.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1897193150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1898565020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1923751644.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1945906611.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1955539429.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1974869314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/198970576.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/1994274818.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2007932771.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2026786781.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2027141554.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2084608726.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2093558934.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2097103495.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/2124275590.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/234195728.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/310571541.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/331776309.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/341562375.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/343436433.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/383227581.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/387170502.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/399482672.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4006885468.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4011783583.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4050661847.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4058010889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/406495448.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4065592295.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4084309369.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4087525864.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4091550236.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/409428213.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/4099050725.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/416932873.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/423242794.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/432066121.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/433013981.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/452148922.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/465250784.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/465388291.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/467477601.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/470679561.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/481143540.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/489890851.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/497318996.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/498344341.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/499131633.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/518485500.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/526751159.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/532214424.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/538348260.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/538365068.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/540038961.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/540535657.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/597445723.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/612115960.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/619875602.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/624380451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/628003094.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/628401668.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/641581118.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/646469194.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/669222681.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/673113301.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/689825363.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/692495496.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/694664661.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/695352498.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/707762054.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/716148261.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/717760483.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/720214104.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/731080074.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/733308576.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/735598176.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/742943300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/743775566.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/751586125.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/752367671.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/757322327.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/768172442.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/782064217.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/782402831.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/785704774.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/799195108.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/810578365.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/810869103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/819981314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/833282353.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/835054678.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/850351003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/854448640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/862829618.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/862961002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/870732774.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/880461706.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/888355248.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/890205265.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/894556297.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/914438292.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/915093181.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/917601569.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/951378262.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/968959583.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/971103920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/972963107.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/983645283.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/990544269.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/profile_pictures/996641200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/6c9d24cc-4017-468b-8d3c-25d3f53ca360.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/72d9aa9d-1c55-4413-886f-a157b452d7cc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/7ab3d754-eba7-4c1e-a804-acc99f1fa15e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/7da138e9-09fe-4b73-ba6d-54341d821900.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/9947cf1c-7d29-4421-9b8d-962e867256e8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/c0a7ad27-ed2b-489c-8a85-6f968ea936bd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/c0dd0b55-1583-406d-b748-3794d19e9c9c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/f861238e-0bba-4987-8360-41dda922a2fa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/DataSources/SqlDataAccess.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Extensions/HostExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Migrations/20240423_Initial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/Extensions/HostExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/EventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/9760f71a-43b6-451c-982f-9fdb8368e697.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/98eaae88-839d-41d2-9a17-95d503d91abe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/b5044d20-7651-48e5-82e1-e5b9954d0390.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/c783ad5e-6ea5-4263-8824-0b33bf82a814.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/dce9afe7-f780-47cb-a044-18d1d4885558.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dev-mate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dev-mate/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IEventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IEventRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/BotClients/ITelegramBotClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/ITelegramBot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/BotClients/ITelegramBotClientFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/UserClients/ITelegramUserClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/UserClients/ITelegramUserClientFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Analytics/IEventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/Analytics/IEventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Auth/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/Auth/IAuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Auth/AuthResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Models/Auth/AuthResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Models/TelegramClientModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Models/TelegramMessageModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Models/TelegramPeerModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/Services/ITelegramBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Abstractions/Telegram/ITelegramBot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Analytics/IEventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/IEventService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Analytics/ITelegramAnalyticsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Auth/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Mailing/IEmailTemplateService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Contracts/IEmailTemplateService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/Mailing/IMailingService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Contracts/User/IUserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Analytics/TelegramAnalyticsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Analytics/TelegramDataPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Analytics/TelegramUserModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Analytics/UrlAnalyticsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Analytics/UrlAnalyticsDataPoint.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Auth/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Models/Auth/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Auth/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Models/Auth/UserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Event/Event.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/DevMate.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application/DevMate.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application.Models/Event/EventModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application.Models/Event/EventModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Application/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/Auth/TelegramAuthService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/Auth/TelegramUserAuthService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/EmailTemplateService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application/Services/EmailTemplateService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Application/Services/EventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/MailingService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/TelegramAnalyticsService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Application/Services/TelegramUserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/DevMate.Infrastructure.DataAccess.PostgreSql.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/DevMate.Infrastructure.DataAccess.PostgreSql.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Migrations/Initial_01.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Repositories/EventRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Bot/DevMate.Infrastructure.Integration.Telegram.Bot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Bot/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Bot/Services/TelegramBotClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Bot/Services/TelegramBotClientFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Tests/DevMate.Infrastructure.Integration.Telegram.Tests.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.Tests/Services/TelegramUserClientTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.User/DevMate.Infrastructure.Integration.Telegram.User.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.User/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.User/Services/TelegramUserClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.User/Services/TelegramUserClientDeprecated.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram.User/Services/TelegramUserClientFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/AnalyticsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.DataAccess.PostgreSql/Stores/ClientStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/DevMate.Infrastructure.Integration.Telegram.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/TelegramBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/TelegramBot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandlers/LoginHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Infrastructure.Integration.Telegram/UpdateHandlers/CallbackHandlers/LoginHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/MailingController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/PaymentController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/15109ee2-ef8c-45c4-a860-0be3b26b3dad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/15109ee2-ef8c-45c4-a860-0be3b26b3dad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/22c5012d-7f26-4972-8378-674a747ab318.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/22c5012d-7f26-4972-8378-674a747ab318.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/24e7e8f4-3b3a-4955-87a4-ae730dd3ee29.png" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/24e7e8f4-3b3a-4955-87a4-ae730dd3ee29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/2afbb7cb-c4f1-4f3a-9f71-26454277c498.png" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/2afbb7cb-c4f1-4f3a-9f71-26454277c498.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/2beff52e-ce12-4bb8-94d1-cf70412ded85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/2beff52e-ce12-4bb8-94d1-cf70412ded85.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/2eae9556-ad27-4b35-9797-5a58fd82afcf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/2eae9556-ad27-4b35-9797-5a58fd82afcf.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/367f201b-51ff-432d-bfb9-ba09bb0efdea.png" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/367f201b-51ff-432d-bfb9-ba09bb0efdea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/3797eb89-2720-401c-a86d-4b5baa97ddb5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/3797eb89-2720-401c-a86d-4b5baa97ddb5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/438f3cf0-1ebb-4f3e-9307-4ff96e58094f.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/438f3cf0-1ebb-4f3e-9307-4ff96e58094f.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/83d01311-d6fa-43c6-b30f-67024c3073b7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/83d01311-d6fa-43c6-b30f-67024c3073b7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/9947cf1c-7d29-4421-9b8d-962e867256e8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/3aab724e-3ae5-4f99-82f8-104179e298c9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/wwwroot/uploads/c0dd0b55-1583-406d-b748-3794d19e9c9c.png" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/wwwroot/uploads/47bd0e5a-ce02-47e4-8e9c-4aff5c40d27a.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate/DevMate.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/DevMate.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevMate.Presentation.API/Controllers/UserController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DevMate/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevMate/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/DevMate/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-mate.sln" beforeDir="false" afterPath="$PROJECT_DIR$/dev-mate.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,6 +97,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/mikedegeofroy/Documents/projects/devmate-server/DevMate.Application.Contracts/Auth/IAuthService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DevMate.Application/bin/Debug/net7.0/DevMate.Application.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DevMate.Presentation.API/bin/Debug/net7.0/DevMate.Presentation.API.deps.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/a07007449a034c9ab728475ac09b523594400/59/af5512a1/02000017.il" root0="SKIP_HIGHLIGHTING" />
@@ -341,6 +115,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/62/a43b1216/IStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/84/00ce7f8c/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/86/caad9a99/Func`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/a8/a6d87e85/Int64.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/be/b248e0d0/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8264d534f3384400abe708bda89d55f1c40c00/d1/b8f64480/Stream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d615bf9c9c24125887c0a9ed96bb4806000/af/2995331b/MvcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -353,6 +128,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a07007449a034c9ab728475ac09b523594400/f8/55e3dd0a/InputPeer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb5c8041b8df459a9552a3368bc95e6316800/ce/9fd0c908/ClaimsPrincipal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd244751032541219fe0724dafc7e191a3f78/90/3eb90a16/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eae8f46f6ffa40c5bb0e1d7b23f7883887e00/08/2d21f2b8/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f541d7580909455e98d8c3c69c32da1d7a00/1d/a3cbac66/IPostgresConnectionProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f541d7580909455e98d8c3c69c32da1d7a00/23/7f07513a/IPostgresConnectionFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f541d7580909455e98d8c3c69c32da1d7a00/9d/23d92da7/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -376,50 +152,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.DevMate.Presentation.API: http.executor": "Run",
-    ".NET Launch Settings Profile.DevMateTest: http.executor": "Run",
-    ".NET Launch Settings Profile.ParkingApp.Presentation.API: http.executor": "Run",
-    ".NET Launch Settings Profile.WebApplication1: http.executor": "Run",
-    ".NET Launch Settings Profile.http.executor": "Run",
-    ".NET Launch Settings Profile.parking-app-backend: parking_app_backend.executor": "Run",
-    ".NET Project.ConsoleTestApp.executor": "Run",
-    ".NET Project.Test.executor": "Debug",
-    ".NET Project.TestApp.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Rider.SolutionAnalysis.ShowPreview": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.46469623",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/mikedegeofroy/Documents/projects/devmate-server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.DevMate.Presentation.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.DevMateTest: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ParkingApp.Presentation.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.parking-app-backend: parking_app_backend.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.ConsoleTestApp.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Test.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.TestApp.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Rider.SolutionAnalysis.ShowPreview&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.46469623&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mikedegeofroy/Documents/projects/devmate-server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "PostgreSQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;PostgreSQL&quot;
     ],
-    "rider.external.source.directories": [
-      "/Users/mikedegeofroy/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/mikedegeofroy/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/mikedegeofroy/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/mikedegeofroy/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/mikedegeofroy/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/mikedegeofroy/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.http">
     <configuration name="http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DevMate/DevMate.csproj" />
@@ -507,11 +283,31 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.http" />
       <item itemvalue=".NET Launch Settings Profile.https" />
       <item itemvalue="Docker.DevMate/Dockerfile: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -571,7 +367,11 @@
       <workItem from="1713302335859" duration="8786000" />
       <workItem from="1713728750831" duration="5904000" />
       <workItem from="1713734751687" duration="1386000" />
-      <workItem from="1713736367654" duration="30109000" />
+      <workItem from="1713736367654" duration="44886000" />
+      <workItem from="1714035995948" duration="621000" />
+      <workItem from="1714042451918" duration="239000" />
+      <workItem from="1714053651698" duration="622000" />
+      <workItem from="1714155711061" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -709,7 +509,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713304953678</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added files to gitignore">
+      <option name="closed" value="true" />
+      <created>1713887662146</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713887662146</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changed how auth works, added some basic telegram features">
+      <option name="closed" value="true" />
+      <created>1713887786543</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713887786543</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,12 +569,32 @@
     <MESSAGE value="fuck it x2" />
     <MESSAGE value="lol" />
     <MESSAGE value="Refactored the file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the file structure" />
+    <MESSAGE value="Added files to gitignore" />
+    <MESSAGE value="Changed how auth works, added some basic telegram features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed how auth works, added some basic telegram features" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DevMate.Application/Services/AuthService.cs</url>
+          <line>50</line>
+          <properties documentPath="$PROJECT_DIR$/DevMate.Application/Services/AuthService.cs" initialLine="48" containingFunctionPresentation="Method 'VerifyLogin'">
+            <startOffsets>
+              <option value="1443" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1584" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Program+&lt;&gt;c__DisplayClass0_0.&lt;&lt;Main&gt;$&gt;b__2" memberName="options" />
+        <PinnedItemInfo parentTag="Frame#DevMate.Application.Services.AuthService.VerifyLogin" memberName="what" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

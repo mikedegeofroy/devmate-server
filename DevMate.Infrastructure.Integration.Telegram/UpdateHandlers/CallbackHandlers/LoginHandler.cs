@@ -1,4 +1,4 @@
-using DevMate.Application.Contracts.Auth;
+using DevMate.Application.Contracts;
 using DevMate.Application.Models.Auth;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -9,7 +9,7 @@ namespace DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.CallbackHan
 public class LoginHandler : ICallbackHandler
 {
     private readonly IAuthService _authService;
-    private ICallbackHandler _nextHandler;
+    private ICallbackHandler? _nextHandler;
 
     public LoginHandler(IAuthService authService)
     {
@@ -22,7 +22,7 @@ public class LoginHandler : ICallbackHandler
         string callbackData = callbackQuery.Data ?? "";
         if (!callbackData.StartsWith("login"))
         {
-            _nextHandler.Handle(botClient, callbackQuery, cancellationToken);
+            _nextHandler?.Handle(botClient, callbackQuery, cancellationToken);
             return;
         }
 
@@ -34,10 +34,12 @@ public class LoginHandler : ICallbackHandler
             if (callbackQuery.From.Username == null) return;
 
             AuthResult result = _authService.ApproveLogin(param,
-                new User(
-                    callbackQuery.From.Id,
-                    callbackQuery.From.Username
-                )
+                new User
+                {
+                    UserId = callbackQuery.From.Id,
+                    Username = callbackQuery.From.Username,
+                    Id = -1
+                }
             );
 
 
