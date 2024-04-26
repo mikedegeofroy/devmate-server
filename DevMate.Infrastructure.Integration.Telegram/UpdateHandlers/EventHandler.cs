@@ -8,7 +8,7 @@ namespace DevMate.Infrastructure.Integration.Telegram.UpdateHandlers;
 
 public class EventHandler : IUpdateHandler
 {
-    private IUpdateHandler _updateHandler;
+    private IUpdateHandler? _updateHandler;
 
     public async void Handle(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {

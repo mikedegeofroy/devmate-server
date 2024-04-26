@@ -1,4 +1,5 @@
-﻿using DevMate.Application.Abstractions.Services;
+﻿using DevMate.Application.Abstractions.Repositories;
+using DevMate.Application.Abstractions.Services;
 using DevMate.Application.Abstractions.Telegram;
 using DevMate.Application.Contracts;
 using DevMate.Application.Models.Event;
@@ -16,17 +17,20 @@ public class TelegramBot : ITelegramBot, IEventPublisher
 {
     private readonly ILogger<ITelegramBot> _logger;
     private readonly TelegramBotClient _telegramBotClient;
+    private readonly IEventRepository _eventRepository;
 
     private readonly IUpdateHandler _updateHandlerChain;
 
-    public TelegramBot(ILogger<ITelegramBot> logger, IConfiguration configuration, IAuthService authService)
+    public TelegramBot(ILogger<ITelegramBot> logger, IConfiguration configuration, IAuthService authService, IEventRepository eventRepository)
     {
         _logger = logger;
+        _eventRepository = eventRepository;
         _telegramBotClient = new TelegramBotClient(configuration.GetSection("AppSettings:TelegramBotToken").Value!);
 
         _updateHandlerChain = new StartHandler();
 
         _updateHandlerChain
+            .SetNext(new InlineHandlerPromt(_eventRepository))
             .SetNext(new EventHandler())
             .SetNext(new InvoiceHandler())
             .SetNext(new CallbackHandler(authService));
