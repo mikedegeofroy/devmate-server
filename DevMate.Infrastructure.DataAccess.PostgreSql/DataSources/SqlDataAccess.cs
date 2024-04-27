@@ -15,7 +15,7 @@ public class SqlDataAccess
 
     private string GetConnectionString()
     {
-        return _configuration.GetSection("AppSettings:DatabaseConnectionString").Value! ??
+        return _configuration.GetSection("AppSettings:DatabaseConnectionString").Value ??
                throw new Exception("No connection string found.");
     }
 

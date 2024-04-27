@@ -46,7 +46,7 @@ public class EventService : IEventService
 
     public EventModel UploadCover(EventModel to, Stream stream)
     {
-        string relativePath = "/uploads/" + Guid.NewGuid() + ".jpg";
+        string relativePath = Guid.NewGuid() + ".jpg";
         EventModel toUpdate = to with { Cover = _fileSystem.WriteFile(stream, relativePath).GetAwaiter().GetResult() };
         return _eventRepository.UpdateEvent(toUpdate);
     }

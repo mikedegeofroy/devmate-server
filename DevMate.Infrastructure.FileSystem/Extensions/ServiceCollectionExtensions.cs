@@ -8,7 +8,7 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructureLocalFileSystem(this IServiceCollection collection)
     {
-        collection.AddSingleton<IFileSystem, LocalFileSystemService>();
+        collection.AddSingleton<IFileSystem, AmazonS3FileSystem>();
 
         return collection;
     }
