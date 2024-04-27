@@ -1,11 +1,11 @@
 using DevMate.Application.Models.Auth;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Events;
 
 namespace DevMate.Application.Contracts;
 
 public interface IUserService
 {
-    UserDto GetUser(long id);
+    AuthUserDto GetUser(long id);
 
-    IEnumerable<EventModel> GetEvents(UserDto userDto);
+    IEnumerable<EventDto> GetEvents(AuthUserDto authUserDto);
 }

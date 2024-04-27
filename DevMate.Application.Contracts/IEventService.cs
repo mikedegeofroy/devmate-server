@@ -1,16 +1,16 @@
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Events;
 
 namespace DevMate.Application.Contracts;
 
 public interface IEventService
 {
-    EventModel? GetEventById(long id);
-    IEnumerable<EventModel> GetEvents();
+    EventDto? GetEventById(long id);
+    IEnumerable<EventDto> GetEvents();
 
-    EventModel CreateEvent(long userId);
+    EventDto CreateEvent(long userId);
 
-    EventModel UpdateEvent(EventModel toUpdate);
+    EventDto UpdateEvent(EventDto toUpdate);
 
-    EventModel UploadCover(EventModel to, Stream stream);
+    EventDto UploadCover(EventDto to, Stream stream);
     void PostEvent(long id);
 }

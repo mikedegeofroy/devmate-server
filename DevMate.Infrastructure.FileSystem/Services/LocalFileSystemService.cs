@@ -1,5 +1,4 @@
 using DevMate.Application.Abstractions.FileSystem;
-using Microsoft.AspNetCore.Hosting.Server;
 
 namespace DevMate.Infrastructure.FileSystem.Services;
 

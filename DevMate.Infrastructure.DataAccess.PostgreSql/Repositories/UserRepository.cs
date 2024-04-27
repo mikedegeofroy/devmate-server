@@ -1,8 +1,7 @@
 using System.Data;
 using Dapper;
 using DevMate.Application.Abstractions.Repositories;
-using DevMate.Application.Models.Auth;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
 using DevMate.Infrastructure.DataAccess.PostgreSql.DataSources;
 
 namespace DevMate.Infrastructure.DataAccess.PostgreSql.Repositories;
@@ -34,7 +33,7 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT id, user_id as UserId, username FROM users;
+                                SELECT id, telegram_id as TelegramId, username, profile_picture as ProfilePicture FROM users;
                              """;
 
         var users = connection.Query<User>(query)
@@ -49,15 +48,16 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string permalinkQuery = """
-                                          INSERT INTO users (user_id, username)
-                                          VALUES (@UserId, @Username)
+                                          INSERT INTO users (telegram_id, username, profile_picture)
+                                          VALUES (@TelegramId, @Username, @ProfilePicture)
                                           RETURNING *
                                       """;
 
         User? insertedUser = connection.QueryFirstOrDefault<User>(permalinkQuery, new
         {
-            user.UserId,
-            user.Username
+            user.TelegramId,
+            user.Username,
+            user.ProfilePicture
         });
 
         return insertedUser;
@@ -70,13 +70,14 @@ public class UserRepository : IUserRepository
         const string permalinkQuery = """
                                           UPDATE users SET
                                             username = @Username
-                                                        WHERE user_id = @Id
+                                                        WHERE telegram_id = @TelegramId
                                           RETURNING *
                                       """;
 
         User? updatedUser = connection.ExecuteScalar<User>(permalinkQuery, new
         {
-            user.Username
+            user.Username,
+            user.TelegramId
         });
 
         return updatedUser;

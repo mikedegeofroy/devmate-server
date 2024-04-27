@@ -1,8 +1,8 @@
 namespace DevMate.Application.Models.Auth;
 
-public record User
+public record AuthUserDto
 {
     public long Id { get; init; }
-    public long UserId { get; init; }
+    public string ProfilePicture { get; init; }
     public string Username { get; init; }
 };

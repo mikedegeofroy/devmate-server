@@ -1,4 +1,4 @@
-using DevMate.Application.Models.Auth;
+using DevMate.Application.Models.Domain;
 
 namespace DevMate.Application.Abstractions.Repositories;
 

@@ -18,4 +18,10 @@
       <PackageReference Include="Npgsql" Version="8.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="DevMate.Application.Models">
+        <HintPath>..\DevMate\bin\Debug\net7.0\DevMate.Application.Models.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

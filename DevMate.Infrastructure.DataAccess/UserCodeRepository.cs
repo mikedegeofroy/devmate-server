@@ -1,5 +1,6 @@
 using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Models.Auth;
+using DevMate.Application.Models.Domain;
 
 namespace DevMate.Infrastructure.DataAccess;
 

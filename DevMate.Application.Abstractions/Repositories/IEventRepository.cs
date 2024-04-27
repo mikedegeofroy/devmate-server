@@ -1,14 +1,14 @@
-using DevMate.Application.Models.Auth;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
+using DevMate.Application.Models.Events;
 
 namespace DevMate.Application.Abstractions.Repositories;
 
 public interface IEventRepository
 {
-    EventModel? GetEventById(long id);
-    IEnumerable<EventModel> GetEvents();
+    Event? GetEventById(long id);
+    IEnumerable<Event> GetEvents();
 
-    EventModel AddEvent(User user);
+    Event AddEvent(User user);
 
-    EventModel UpdateEvent(EventModel eventModel);
+    Event UpdateEvent(EventDto toUpdate);
 }

@@ -2,7 +2,7 @@
 using DevMate.Application.Abstractions.Services;
 using DevMate.Application.Abstractions.Telegram;
 using DevMate.Application.Contracts;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
 using DevMate.Infrastructure.Integration.Telegram.UpdateHandlers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -47,6 +47,19 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         _logger.LogInformation("Bot is running.");
     }
 
+    public async Task<Stream> DownloadTelegramPicture(long telegramId)
+    {
+        UserProfilePhotos photos = await _telegramBotClient.GetUserProfilePhotosAsync(telegramId, limit: 1);
+        
+        PhotoSize photo = photos.Photos[0][^1];
+
+        var fileStream = new MemoryStream();
+        
+        await _telegramBotClient.GetInfoAndDownloadFileAsync(photo.FileId, fileStream);
+
+        return fileStream;
+    }
+
     private Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
         CancellationToken cancellationToken)
     {
@@ -69,21 +82,21 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         return Task.CompletedTask;
     }
 
-    public async void PostEvent(long recipient, EventModel eventModelObject)
+    public async void PostEvent(long recipient, Event eventObject)
     {
         var keyboardMarkup = new InlineKeyboardMarkup(new[]
         {
             new[]
             {
                 InlineKeyboardButton.WithCallbackData("Find out More", $"more"),
-                InlineKeyboardButton.WithCallbackData("Buy", $"buy_{eventModelObject.Id}"),
+                InlineKeyboardButton.WithCallbackData("Buy", $"buy_{eventObject.Id}"),
             }
         });
 
         await _telegramBotClient.SendPhotoAsync(
             chatId: recipient,
-            caption: $"<b>{eventModelObject.Title}<\b>\n{eventModelObject.Description}",
-            photo: new InputFileUrl(eventModelObject.Cover),
+            caption: $"<b>{eventObject.Title}<\b>\n{eventObject.Description}",
+            photo: new InputFileUrl(eventObject.Cover),
             replyMarkup: keyboardMarkup,
             cancellationToken: CancellationToken.None
         );

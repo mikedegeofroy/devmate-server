@@ -10,4 +10,10 @@
       <ProjectReference Include="..\DevMate.Application.Models\DevMate.Application.Models.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="DevMate.Application.Models">
+        <HintPath>..\DevMate\bin\Debug\net7.0\DevMate.Application.Models.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

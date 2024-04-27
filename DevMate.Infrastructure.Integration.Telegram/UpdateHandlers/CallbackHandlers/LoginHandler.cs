@@ -1,8 +1,9 @@
 using DevMate.Application.Contracts;
 using DevMate.Application.Models.Auth;
+using DevMate.Application.Models.Telegram;
 using Telegram.Bot;
 using Telegram.Bot.Types;
-using User = DevMate.Application.Models.Auth.User;
+using User = DevMate.Application.Models.Domain.User;
 
 namespace DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.CallbackHandlers;
 
@@ -33,12 +34,11 @@ public class LoginHandler : ICallbackHandler
         {
             if (callbackQuery.From.Username == null) return;
 
-            AuthResult result = _authService.ApproveLogin(param,
-                new User
+            AuthResult result = await _authService.ApproveLogin(param,
+                new TelegramUserDto
                 {
-                    UserId = callbackQuery.From.Id,
+                    TelegramId = callbackQuery.From.Id,
                     Username = callbackQuery.From.Username,
-                    Id = -1
                 }
             );
 
