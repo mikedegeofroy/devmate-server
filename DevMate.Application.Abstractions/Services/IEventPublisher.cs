@@ -1,8 +1,8 @@
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
 
 namespace DevMate.Application.Abstractions.Services;
 
 public interface IEventPublisher
 {
-    void PostEvent(long recipient, EventModel eventModelObject);
+    void PostEvent(long recipient, Event eventObject);
 }

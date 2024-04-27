@@ -1,4 +1,5 @@
 using DevMate.Application.Models.Auth;
+using DevMate.Application.Models.Telegram;
 
 namespace DevMate.Application.Contracts;
 
@@ -8,5 +9,5 @@ public interface IAuthService
 
     AuthResult VerifyLogin(string? code);
 
-    AuthResult ApproveLogin(string? code, Models.Auth.User user);
+    Task<AuthResult> ApproveLogin(string? code, TelegramUserDto userDto);
 }

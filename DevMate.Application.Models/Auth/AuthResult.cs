@@ -9,7 +9,7 @@ public record AuthResult
         Message = message;
     }
 
-    public sealed record Success(UserDto User) : AuthResult("Welcome!");
+    public sealed record Success(AuthUserDto User, string Secret) : AuthResult("Welcome!");
 
     public sealed record VerifyCode(string Code) : AuthResult("Verify through telegram bot");
 

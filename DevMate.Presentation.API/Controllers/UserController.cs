@@ -19,7 +19,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("me")]
-    public ActionResult<UserDto> GetMe()
+    public ActionResult<AuthUserDto> GetMe()
     {
         string? userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
@@ -29,14 +29,14 @@ public class UserController : ControllerBase
     }
     
     [HttpGet("events")]
-    public ActionResult<UserDto> GetEvents()
+    public ActionResult<AuthUserDto> GetEvents()
     {
         string? userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         
         if (userId == null)
             return NotFound();
         
-        UserDto dto = _userService.GetUser(long.Parse(userId));
+        AuthUserDto dto = _userService.GetUser(long.Parse(userId));
         return Ok(_userService.GetEvents(dto));
     }
 }

@@ -1,4 +1,5 @@
 using System.Text;
+using DevMate.Application;
 using DevMate.Application.Extensions;
 using DevMate.Infrastructure.DataAccess.Extensions;
 using DevMate.Infrastructure.DataAccess.PostgreSql.Extensions;
@@ -17,11 +18,13 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplication();
 builder.Services.AddInfrastructureIntegrationMailgun();
 builder.Services.AddInfrastructureIntegrationTelegram();
-builder.Services.AddInfrastructureLocalFileSystem();
+builder.Services.AddInfrastructureFileSystem();
 builder.Services.AddInfrastructureDataAccess();
 builder.Services.AddInfrastructureDataAccessPostgreSql(
     builder.Configuration.GetSection("AppSettings:DatabaseConnectionString").Value!
 );
+
+builder.Services.AddMediatR(cfg =>  cfg.RegisterServicesFromAssemblyContaining<IApplicationAssemblyMarker>());
 
 builder.Services.AddControllers();
 
@@ -72,8 +75,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 

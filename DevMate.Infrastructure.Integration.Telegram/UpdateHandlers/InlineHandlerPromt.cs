@@ -1,5 +1,5 @@
 using DevMate.Application.Abstractions.Repositories;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -24,13 +24,13 @@ public class InlineHandlerPromt : IUpdateHandler
             update.Type == UpdateType.InlineQuery
         )
         {
-            IEnumerable<EventModel> allEvents = _eventRepository.GetEvents();
+            IEnumerable<Event> allEvents = _eventRepository.GetEvents();
             //in future we will chose available events for current user by userId
             // var available_events = all_events.Where(x => x.UserId == userId);
             var queryResults = new List<InlineQueryResult>();
             int counter = 0;
 
-            foreach (EventModel availableEvent in allEvents)
+            foreach (Event availableEvent in allEvents)
             {
                 queryResults.Add(new InlineQueryResultArticle(
                     id: $"{counter}",

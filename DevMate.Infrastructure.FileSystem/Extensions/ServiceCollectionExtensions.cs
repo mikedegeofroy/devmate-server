@@ -6,7 +6,7 @@ namespace DevMate.Infrastructure.FileSystem.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddInfrastructureLocalFileSystem(this IServiceCollection collection)
+    public static IServiceCollection AddInfrastructureFileSystem(this IServiceCollection collection)
     {
         collection.AddSingleton<IFileSystem, AmazonS3FileSystem>();
 

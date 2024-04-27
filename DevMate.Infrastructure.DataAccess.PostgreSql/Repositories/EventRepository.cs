@@ -1,8 +1,8 @@
 using System.Data;
 using Dapper;
 using DevMate.Application.Abstractions.Repositories;
-using DevMate.Application.Models.Auth;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
+using DevMate.Application.Models.Events;
 using DevMate.Infrastructure.DataAccess.PostgreSql.DataSources;
 
 namespace DevMate.Infrastructure.DataAccess.PostgreSql.Repositories;
@@ -16,7 +16,7 @@ public class EventRepository : IEventRepository
         _sql = sql;
     }
 
-    public EventModel? GetEventById(long id)
+    public Event? GetEventById(long id)
     {
         IDbConnection connection = _sql.GetConnection();
 
@@ -24,50 +24,50 @@ public class EventRepository : IEventRepository
                                 SELECT * FROM events WHERE id = @Id;
                              """;
 
-        EventModel? eventModel = connection.QueryFirstOrDefault<EventModel>(query, new { Id = id });
+        Event? eventModel = connection.QueryFirstOrDefault<Event>(query, new { Id = id });
 
         return eventModel;
     }
 
-    public IEnumerable<EventModel> GetEvents()
+    public IEnumerable<Event> GetEvents()
     {
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
                                 SELECT * FROM events;
                              """;
-        var events = connection.Query<EventModel>(query)
+        var events = connection.Query<Event>(query)
             .Distinct()
             .ToList();
 
         return events;
     }
 
-    public EventModel AddEvent(User user)
+    public Event AddEvent(User user)
     {
         IDbConnection connection = _sql.GetConnection();
 
         const string permalinkQuery = """
-                                          INSERT INTO events (user_id, title, description, places, occupied, price)
-                                          VALUES (@UserId, 'Title', 'Description', 10, 0, 0)
+                                          INSERT INTO events (user_id, user_telegram_id, title, description, places, occupied, price)
+                                          VALUES (@UserId, @UserTelegramId, 'Title', 'Description', 10, 0, 0)
                                           RETURNING *
                                       """;
 
-        EventModel? model = connection.QueryFirstOrDefault<EventModel>(permalinkQuery, new
+        Event? model = connection.QueryFirstOrDefault<Event>(permalinkQuery, new
         {
-            UserId = user.Id
+            UserId = user.Id,
+            UserTelegramId = user.TelegramId
         });
 
         return model;
     }
 
-    public EventModel UpdateEvent(EventModel eventModel)
+    public Event UpdateEvent(EventDto toUpdate)
     {
         IDbConnection connection = _sql.GetConnection();
 
         const string permalinkQuery = """
                                           UPDATE events SET
-                                            user_id = @UserId,
                                             title = @Title,
                                             description = @Description,
                                             places = @Places,
@@ -80,18 +80,17 @@ public class EventRepository : IEventRepository
                                           RETURNING *
                                       """;
 
-        EventModel? model = connection.QueryFirstOrDefault<EventModel>(permalinkQuery, new
+        Event? model = connection.QueryFirstOrDefault<Event>(permalinkQuery, new
         {
-            eventModel.Id,
-            eventModel.UserId,
-            eventModel.Title,
-            eventModel.Description,
-            eventModel.Places,
-            eventModel.Occupied,
-            eventModel.Price,
-            eventModel.Cover,
-            eventModel.StartDateTime,
-            eventModel.EndDateTime
+            toUpdate.Id,
+            toUpdate.Title,
+            toUpdate.Description,
+            toUpdate.Places,
+            toUpdate.Occupied,
+            toUpdate.Price,
+            toUpdate.Cover,
+            toUpdate.StartDateTime,
+            toUpdate.EndDateTime
         });
 
         return model;

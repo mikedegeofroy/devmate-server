@@ -36,4 +36,9 @@ public class MailgunService : IMailService
 
         client.Execute(request);
     }
+
+    public void SendMail(string email, MailContent content)
+    {
+        throw new NotImplementedException();
+    }
 }

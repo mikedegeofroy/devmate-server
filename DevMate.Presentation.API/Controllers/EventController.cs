@@ -1,7 +1,7 @@
 using System.Security.Claims;
-using System.Security.Principal;
 using DevMate.Application.Contracts;
-using DevMate.Application.Models.Event;
+using DevMate.Application.Models.Domain;
+using DevMate.Application.Models.Events;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,23 +20,23 @@ public class EventController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<EventModel>> Events()
+    public ActionResult<IEnumerable<Event>> Events()
     {
-        IEnumerable<EventModel> events = _eventService.GetEvents();
+        IEnumerable<EventDto> events = _eventService.GetEvents();
 
         return Ok(events);
     }
 
     [Authorize]
     [HttpPut("update")]
-    public ActionResult<EventModel> UpdateEvent(EventModel update)
+    public ActionResult<EventDto> UpdateEvent(EventDto update)
     {
         return Ok(_eventService.UpdateEvent(update));
     }
 
     [Authorize]
     [HttpPost("create")]
-    public ActionResult<EventModel> CreateEvent()
+    public ActionResult<Event> CreateEvent()
     {
         string? userId = User.FindFirst(ClaimTypes.Sid)?.Value;
         
@@ -53,7 +53,7 @@ public class EventController : ControllerBase
 
     [Authorize]
     [HttpPost("post")]
-    public ActionResult<EventModel> PostEvent(long id)
+    public ActionResult<Event> PostEvent(long id)
     {
         _eventService.PostEvent(id);
         return Ok();
@@ -61,10 +61,10 @@ public class EventController : ControllerBase
 
     [Authorize]
     [HttpPost("upload-cover")]
-    public ActionResult<EventModel> UploadCover(long id, IFormFile file)
+    public ActionResult<Event> UploadCover(long id, IFormFile file)
     {
         Console.WriteLine(file.ContentType);
-        EventModel? eventById = _eventService.GetEventById(id);
+        EventDto? eventById = _eventService.GetEventById(id);
         if (eventById != null)
             return Ok(_eventService.UploadCover(eventById, file.OpenReadStream()));
         return NotFound();

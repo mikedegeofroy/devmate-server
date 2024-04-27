@@ -1,9 +1,10 @@
-namespace DevMate.Application.Models.Event;
+namespace DevMate.Application.Models.Domain;
 
-public record EventModel
+public record Event
 {
     public long Id { get; init; }
     public long UserId { get; init; }
+    public long UserTelegramId { get; init; }
     public string Title { get; init; }
 
     public string Description { get; init; }
