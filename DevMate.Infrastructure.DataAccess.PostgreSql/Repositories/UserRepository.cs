@@ -33,7 +33,7 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT id, telegram_id as UserId, username FROM users;
+                                SELECT id, telegram_id as TelegramId, username, profile_picture as ProfilePicture FROM users;
                              """;
 
         var users = connection.Query<User>(query)
@@ -48,15 +48,16 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string permalinkQuery = """
-                                          INSERT INTO users (telegram_id, username)
-                                          VALUES (@TelegramId, @Username)
+                                          INSERT INTO users (telegram_id, username, profile_picture)
+                                          VALUES (@TelegramId, @Username, @ProfilePicture)
                                           RETURNING *
                                       """;
 
         User? insertedUser = connection.QueryFirstOrDefault<User>(permalinkQuery, new
         {
             user.TelegramId,
-            user.Username
+            user.Username,
+            user.ProfilePicture
         });
 
         return insertedUser;

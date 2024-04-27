@@ -1,3 +1,5 @@
+using DevMate.Application.Models.Mailing;
+
 namespace DevMate.Application.Abstractions.Repositories;
 
 public interface IEmailTemplateRepository

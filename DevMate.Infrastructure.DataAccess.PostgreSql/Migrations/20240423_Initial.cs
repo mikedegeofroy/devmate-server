@@ -9,7 +9,8 @@ public class Initial : Migration {
         Create.Table("users")
             .WithColumn("id").AsInt64().PrimaryKey().Identity()
             .WithColumn("telegram_id").AsInt64().Unique()
-            .WithColumn("username").AsString().Unique();
+            .WithColumn("username").AsString().Unique()
+            .WithColumn("profile_picture").AsString().Nullable();
         
         Create.Table("events")
             .WithColumn("id").AsInt64().PrimaryKey().Identity()
