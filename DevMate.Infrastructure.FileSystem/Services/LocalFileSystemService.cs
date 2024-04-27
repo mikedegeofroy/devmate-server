@@ -20,8 +20,8 @@ public class LocalFileSystemService : IFileSystem
         return fileUrl;
     }
 
-    public bool Exists(string fileName)
+    public Task<bool> Exists(string fileName)
     {
-        return File.Exists(BasePath + fileName);
+        return Task.FromResult(File.Exists(BasePath + fileName));
     }
 }
