@@ -63,6 +63,7 @@ public class TelegramBot : ITelegramBot, IEventPublisher
     private Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
         CancellationToken cancellationToken)
     {
+        _logger.LogInformation($"Received new update {update.Type}");
         try
         {
             _updateHandlerChain.Handle(botClient, update, cancellationToken);

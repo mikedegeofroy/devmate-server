@@ -24,29 +24,44 @@ public class InlineHandlerPromt : IUpdateHandler
             update.Type == UpdateType.InlineQuery
         )
         {
-            IEnumerable<Event> allEvents = _eventRepository.GetEvents();
-            //in future we will chose available events for current user by userId
-            // var available_events = all_events.Where(x => x.UserId == userId);
-            var queryResults = new List<InlineQueryResult>();
-            int counter = 0;
+            IEnumerable<Event> events = _eventRepository.GetEvents();
+            // .Where(x => x.UserTelegramId == update.InlineQuery.From.Id);
 
-            foreach (Event availableEvent in allEvents)
+            var queryResults = new List<InlineQueryResult>();
+
+            // ReSharper disable once LoopCanBeConvertedToQuery
+            foreach (Event availableEvent in events)
             {
+                var replyMarkup = new InlineKeyboardMarkup(new[]
+                {
+                    new InlineKeyboardButton("Attend")
+                    {
+                        Url = $"https://t.me/devm8bot?start=attend_{availableEvent.Id}"
+                    }
+                });
+
+
                 queryResults.Add(new InlineQueryResultArticle(
-                    id: $"{counter}",
+                    id: $"{availableEvent.Id}",
                     title: availableEvent.Title,
-                    inputMessageContent: new InputTextMessageContent("Added a markup")
+                    inputMessageContent: new InputTextMessageContent(
+                        $"[ ](https://sightquest.ru)\n" +
+                        $"**{EscapeMarkdownV2(availableEvent.Title)}**\n" +
+                        $"{EscapeMarkdownV2(availableEvent.Description)}\n"
+                    )
+                    {
+                        ParseMode = ParseMode.MarkdownV2
+                    }
                 )
                 {
                     Description = availableEvent.Description,
-                    ReplyMarkup = new InlineKeyboardMarkup(new [] { new InlineKeyboardButton("ahaha"){ Url = "https://pornhub.com"} })
+                    ReplyMarkup = replyMarkup,
+                    ThumbnailUrl = availableEvent.Cover
                 });
-
-                ++counter;
             }
 
             await botClient.AnswerInlineQueryAsync(update.InlineQuery?.Id, queryResults,
-                    cancellationToken: cancellationToken);
+                cancellationToken: cancellationToken);
             return;
         }
 
@@ -58,5 +73,12 @@ public class InlineHandlerPromt : IUpdateHandler
     {
         _updateHandler = handler;
         return _updateHandler;
+    }
+
+    public static string EscapeMarkdownV2(string text)
+    {
+        char[] specialChars =
+            { '_', '*', '[', ']', '(', ')', '~', '`', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!' };
+        return specialChars.Aggregate(text, (current, c) => current.Replace($"{c}", $"\\{c}"));
     }
 }

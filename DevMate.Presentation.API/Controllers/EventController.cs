@@ -38,7 +38,7 @@ public class EventController : ControllerBase
     [HttpPost("create")]
     public ActionResult<Event> CreateEvent()
     {
-        string? userId = User.FindFirst(ClaimTypes.Sid)?.Value;
+        string? userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         
         Console.WriteLine(string.Join(", ", User.Claims.Select(c => $"{c.Type}: {c.Value}")));
 

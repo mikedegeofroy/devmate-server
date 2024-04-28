@@ -1,13 +1,21 @@
+using DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.StartParameterHandlers;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
-using Telegram.Bot.Types.ReplyMarkups;
 
 namespace DevMate.Infrastructure.Integration.Telegram.UpdateHandlers;
 
 public class StartHandler : IUpdateHandler
 {
     private IUpdateHandler? _updateHandler;
+    private IStartParameterHandler _startParameterHandler;
+
+    public StartHandler()
+    {
+        _startParameterHandler = new AuthHandler();
+        _startParameterHandler
+            .SetNext(new AttendHandler());
+    }
 
     public async void Handle(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {
@@ -21,23 +29,8 @@ public class StartHandler : IUpdateHandler
             string?[] parts = message.Text.Split(' ');
             string? param = parts.Length > 1 ? parts[1] : null;
 
-            var keyboardMarkup = new InlineKeyboardMarkup(new[]
-            {
-                new[]
-                {
-                    InlineKeyboardButton.WithCallbackData("Cancel", $"cancel"),
-                    InlineKeyboardButton.WithCallbackData("Log In", $"login {param}"),
-                }
-            });
-
-            await botClient.SendTextMessageAsync(
-                chatId: message.Chat.Id,
-                text: param != null
-                    ? "New login request from Saint-Petersburg, Russia."
-                    : "Please provide an ID with /start command.",
-                replyMarkup: keyboardMarkup,
-                cancellationToken: cancellationToken
-            );
+            if (param != null)
+                await _startParameterHandler.Handle(botClient, message, cancellationToken);
 
             return;
         }

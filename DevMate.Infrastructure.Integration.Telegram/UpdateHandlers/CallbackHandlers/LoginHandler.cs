@@ -68,8 +68,9 @@ public class LoginHandler : ICallbackHandler
         }
     }
 
-    public void SetNext(ICallbackHandler handler)
+    public ICallbackHandler SetNext(ICallbackHandler handler)
     {
         _nextHandler = handler;
+        return _nextHandler;
     }
 }

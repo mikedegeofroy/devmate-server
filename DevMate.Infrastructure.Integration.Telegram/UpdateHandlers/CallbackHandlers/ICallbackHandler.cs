@@ -8,5 +8,5 @@ public interface ICallbackHandler
     void Handle(ITelegramBotClient botClient, CallbackQuery callbackQuery,
         CancellationToken cancellationToken);
 
-    void SetNext(ICallbackHandler handler);
+    ICallbackHandler SetNext(ICallbackHandler handler);
 }

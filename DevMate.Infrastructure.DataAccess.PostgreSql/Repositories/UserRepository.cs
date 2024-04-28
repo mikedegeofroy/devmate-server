@@ -20,7 +20,7 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT * FROM users WHERE id = @Id;
+                                SELECT id, telegram_id as TelegramId, username, profile_picture as ProfilePicture FROM users WHERE id = @Id;
                              """;
 
         User? user = connection.QueryFirstOrDefault<User>(query, new { Id = id });
