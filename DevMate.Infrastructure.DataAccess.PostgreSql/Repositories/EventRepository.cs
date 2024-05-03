@@ -34,7 +34,19 @@ public class EventRepository : IEventRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT * FROM events;
+                                SELECT
+                                    id,
+                                    user_id as UserId, 
+                                    user_telegram_id as UserTelegramId, 
+                                    title, 
+                                    description, 
+                                    places, 
+                                    occupied, 
+                                    price, 
+                                    cover, 
+                                    end_datetime, 
+                                    start_datetime  
+                                FROM events;
                              """;
         var events = connection.Query<Event>(query)
             .Distinct()
