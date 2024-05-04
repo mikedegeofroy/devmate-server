@@ -132,4 +132,9 @@ public class EventService : IEventService
         if (eventById != null)
             _eventPublisher.PostEvent(914438292, eventById);
     }
+
+    public void DeleteEvent(long id)
+    {
+        _eventRepository.DeleteEventById(id);
+    }
 }

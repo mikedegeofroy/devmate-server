@@ -11,4 +11,6 @@ public interface IEventRepository
     Event AddEvent(User user);
 
     Event UpdateEvent(EventDto toUpdate);
+
+    void DeleteEventById(long id);
 }

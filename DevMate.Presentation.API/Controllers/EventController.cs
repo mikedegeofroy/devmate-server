@@ -28,27 +28,32 @@ public class EventController : ControllerBase
     }
 
     [Authorize]
-    [HttpPut("update")]
-    public ActionResult<EventDto> UpdateEvent(EventDto update)
-    {
-        return Ok(_eventService.UpdateEvent(update));
-    }
-
-    [Authorize]
-    [HttpPost("create")]
+    [HttpPost]
     public ActionResult<Event> CreateEvent()
     {
-        string? userId = User.FindFirst(ClaimTypes.Sid)?.Value;
-        
-        Console.WriteLine(string.Join(", ", User.Claims.Select(c => $"{c.Type}: {c.Value}")));
+        string? userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-        
         if (userId == null)
         {
             return Unauthorized("User ID is not found in the token");
         }
 
         return Ok(_eventService.CreateEvent(long.Parse(userId)));
+    }
+
+    [Authorize]
+    [HttpPut]
+    public ActionResult<EventDto> UpdateEvent(EventDto update)
+    {
+        return Ok(_eventService.UpdateEvent(update));
+    }
+
+    [Authorize]
+    [HttpDelete("{id}")]
+    public ActionResult<EventDto> DeleteEvent(string id)
+    {
+        _eventService.DeleteEvent(long.Parse(id));
+        return Ok();
     }
 
     [Authorize]

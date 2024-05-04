@@ -21,7 +21,19 @@ public class EventRepository : IEventRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT * FROM events WHERE id = @Id;
+                                SELECT
+                                    id,
+                                    user_id as UserId,
+                                    user_telegram_id as UserTelegramId,
+                                    title,
+                                    description,
+                                    places,
+                                    occupied,
+                                    price,
+                                    cover,
+                                    end_datetime as EndDateTime,
+                                    start_datetime as StartDateTime
+                                FROM events WHERE id = @Id;
                              """;
 
         Event? eventModel = connection.QueryFirstOrDefault<Event>(query, new { Id = id });
@@ -36,16 +48,16 @@ public class EventRepository : IEventRepository
         const string query = """
                                 SELECT
                                     id,
-                                    user_id as UserId, 
-                                    user_telegram_id as UserTelegramId, 
-                                    title, 
-                                    description, 
-                                    places, 
-                                    occupied, 
-                                    price, 
-                                    cover, 
-                                    end_datetime, 
-                                    start_datetime  
+                                    user_id as UserId,
+                                    user_telegram_id as UserTelegramId,
+                                    title,
+                                    description,
+                                    places,
+                                    occupied,
+                                    price,
+                                    cover,
+                                    end_datetime as EndDateTime,
+                                    start_datetime as StartDateTime
                                 FROM events;
                              """;
         var events = connection.Query<Event>(query)
@@ -89,7 +101,18 @@ public class EventRepository : IEventRepository
                                             end_datetime = @EndDatetime,
                                             start_datetime = @StartDatetime
                                                         WHERE id = @Id
-                                          RETURNING *
+                                          RETURNING
+                                              id,
+                                              user_id as UserId,
+                                              user_telegram_id as UserTelegramId,
+                                              title,
+                                              description,
+                                              places,
+                                              occupied,
+                                              price,
+                                              cover,
+                                              end_datetime as EndDateTime,
+                                              start_datetime as StartDateTime
                                       """;
 
         Event? model = connection.QueryFirstOrDefault<Event>(permalinkQuery, new
@@ -106,5 +129,20 @@ public class EventRepository : IEventRepository
         });
 
         return model;
+    }
+
+    public void DeleteEventById(long id)
+    {
+        IDbConnection connection = _sql.GetConnection();
+
+        const string query = """
+                             DELETE FROM events
+                                    WHERE id = @Id
+                             """;
+
+        connection.Execute(query, new
+        {
+            Id = id
+        });
     }
 }

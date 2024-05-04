@@ -26,7 +26,13 @@ builder.Services.AddInfrastructureDataAccessPostgreSql(
 
 builder.Services.AddMediatR(cfg =>  cfg.RegisterServicesFromAssemblyContaining<IApplicationAssemblyMarker>());
 
-builder.Services.AddControllers();
+builder.Services
+    .AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.DateFormatString = "yyyy-MM-dd'T'HH:mm:ss.fff'Z'";
+        options.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
+    });;
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

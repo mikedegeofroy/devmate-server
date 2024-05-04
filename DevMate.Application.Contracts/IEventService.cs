@@ -13,4 +13,5 @@ public interface IEventService
 
     EventDto UploadCover(EventDto to, Stream stream);
     void PostEvent(long id);
+    void DeleteEvent(long id);
 }

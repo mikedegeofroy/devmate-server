@@ -20,7 +20,7 @@ public class UserRepository : IUserRepository
         IDbConnection connection = _sql.GetConnection();
 
         const string query = """
-                                SELECT * FROM users WHERE id = @Id;
+                                SELECT id, telegram_id as TelegramId, username, profile_picture as ProfilePicture FROM users WHERE id = @Id;
                              """;
 
         User? user = connection.QueryFirstOrDefault<User>(query, new { Id = id });
@@ -50,7 +50,11 @@ public class UserRepository : IUserRepository
         const string permalinkQuery = """
                                           INSERT INTO users (telegram_id, username, profile_picture)
                                           VALUES (@TelegramId, @Username, @ProfilePicture)
-                                          RETURNING *
+                                          RETURNING 
+                                              id, 
+                                              telegram_id as TelegramId, 
+                                              username, 
+                                              profile_picture as ProfilePicture 
                                       """;
 
         User? insertedUser = connection.QueryFirstOrDefault<User>(permalinkQuery, new
@@ -71,7 +75,11 @@ public class UserRepository : IUserRepository
                                           UPDATE users SET
                                             username = @Username
                                                         WHERE telegram_id = @TelegramId
-                                          RETURNING *
+                                          RETURNING 
+                                                id, 
+                                                telegram_id as TelegramId, 
+                                                username, 
+                                                profile_picture as ProfilePicture 
                                       """;
 
         User? updatedUser = connection.ExecuteScalar<User>(permalinkQuery, new
