@@ -1,6 +1,10 @@
+using DevMate.Application.Models.Domain;
+
 namespace DevMate.Application.Contracts;
 
 public interface IWaitlistService
 {
-    void AddUser(string telegramUsername);
+    void AddUser(WaitlistUser user);
+
+    IEnumerable<WaitlistUser> GetUsers();
 }

@@ -15,7 +15,7 @@ public class WaitlistRepository : IWaitlistRepository
         _sql = sql;
     }
 
-    public void AddUser(string telegramUsername)
+    public void AddUser(WaitlistUser user)
     {
         IDbConnection connection = _sql.GetConnection();
 
@@ -25,7 +25,18 @@ public class WaitlistRepository : IWaitlistRepository
 
         connection.Execute(query, new
         {
-            TelegramUsername = telegramUsername
+            user.TelegramUsername
         });
+    }
+
+    public IEnumerable<WaitlistUser> GetUsers()
+    {
+        IDbConnection connection = _sql.GetConnection();
+
+        const string query = """
+                                SELECT telegram_username AS TelegramUsername FROM waitlist;
+                             """;
+
+        return connection.Query<WaitlistUser>(query).ToList();
     }
 }

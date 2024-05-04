@@ -3,7 +3,7 @@ using FluentMigrator.SqlServer;
 
 namespace DevMate.Infrastructure.DataAccess.PostgreSql.Migrations;
 
-[Migration(20240503)]
+[Migration(202405030018)]
 public class AddingWaitlist : Migration {
     public override void Up()
     {

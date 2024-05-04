@@ -1,5 +1,6 @@
 using DevMate.Application.Abstractions.Repositories;
 using DevMate.Application.Contracts;
+using DevMate.Application.Models.Domain;
 
 namespace DevMate.Application.Services;
 
@@ -12,8 +13,13 @@ public class WaitlistService : IWaitlistService
         _waitlistRepository = waitlistRepository;
     }
 
-    public void AddUser(string telegramUsername)
+    public void AddUser(WaitlistUser user)
     {
-        _waitlistRepository.AddUser(telegramUsername);
+        _waitlistRepository.AddUser(user);
+    }
+
+    public IEnumerable<WaitlistUser> GetUsers()
+    {
+        return _waitlistRepository.GetUsers();
     }
 }

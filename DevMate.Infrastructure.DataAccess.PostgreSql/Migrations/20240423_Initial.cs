@@ -2,7 +2,7 @@ using FluentMigrator;
 
 namespace DevMate.Infrastructure.DataAccess.PostgreSql.Migrations;
 
-[Migration(20240423)]
+[Migration(202404230000)]
 public class Initial : Migration {
     public override void Up()
     {

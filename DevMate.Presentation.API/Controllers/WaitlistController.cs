@@ -1,4 +1,5 @@
 using DevMate.Application.Contracts;
+using DevMate.Application.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevMate.Presentation.API.Controllers;
@@ -14,10 +15,16 @@ public class WaitlistController : ControllerBase
         _waitlistService = waitlistService;
     }
 
-    [HttpGet]
-    public ActionResult AddToWaitlist(string username)
+    [HttpPost]
+    public ActionResult AddToWaitlist([FromBody] WaitlistUser user)
     {
-        _waitlistService.AddUser(username);
+        _waitlistService.AddUser(user);
         return Ok();
+    }
+    
+    [HttpGet]
+    public ActionResult<IEnumerable<WaitlistUser>> GetWaitlist()
+    {
+        return Ok(_waitlistService.GetUsers());
     }
 }
