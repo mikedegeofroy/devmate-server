@@ -22,6 +22,8 @@ public static class ServiceCollectionExtensions
 
         collection.AddSingleton<IEventRepository, EventRepository>();
         collection.AddSingleton<IUserRepository, UserRepository>();
+        collection.AddSingleton<IWaitlistRepository, WaitlistRepository>();
+        collection.AddSingleton<IAuthorizedUsersRepository, AuthorizedUsersRepository>();
         collection.AddSingleton<SqlDataAccess>();
 
         return collection;
