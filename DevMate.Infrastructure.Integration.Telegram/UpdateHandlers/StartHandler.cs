@@ -1,3 +1,4 @@
+using DevMate.Application.Abstractions.Repositories;
 using DevMate.Infrastructure.Integration.Telegram.UpdateHandlers.StartParameterHandlers;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -9,12 +10,14 @@ public class StartHandler : IUpdateHandler
 {
     private IUpdateHandler? _updateHandler;
     private IStartParameterHandler _startParameterHandler;
+    private IEventRepository _eventRepository;
 
-    public StartHandler()
+    public StartHandler(IEventRepository eventRepository)
     {
+        _eventRepository = eventRepository;
         _startParameterHandler = new AuthHandler();
         _startParameterHandler
-            .SetNext(new AttendHandler());
+            .SetNext(new AttendHandler(_eventRepository));
     }
 
     public async void Handle(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)

@@ -27,7 +27,7 @@ public class TelegramBot : ITelegramBot, IEventPublisher
         _eventRepository = eventRepository;
         _telegramBotClient = new TelegramBotClient(configuration.GetSection("AppSettings:TelegramBotToken").Value!);
 
-        _updateHandlerChain = new StartHandler();
+        _updateHandlerChain = new StartHandler(_eventRepository);
 
         _updateHandlerChain
             .SetNext(new InlineHandlerPromt(_eventRepository))

@@ -44,8 +44,8 @@ public class EventRepository : IEventRepository
                                     occupied, 
                                     price, 
                                     cover, 
-                                    end_datetime, 
-                                    start_datetime  
+                                    end_datetime as EndDateTime, 
+                                    start_datetime as StartEndTime 
                                 FROM events;
                              """;
         var events = connection.Query<Event>(query)
@@ -106,5 +106,22 @@ public class EventRepository : IEventRepository
         });
 
         return model;
+    }
+
+    public void AddAttendance(long eventId, long userId, DateTime registrationDatetime)
+    {
+        IDbConnection connection = _sql.GetConnection();
+        
+        const string permalinkQuery = """
+                                          INSERT INTO event_attendance (user_id, event_id, registration_datetime)
+                                          VALUES (@UserId, @EventId, @RegistrationDatetime)
+                                          RETURNING *
+                                      """;
+        connection.QueryFirstOrDefault<Event>(permalinkQuery, new
+        {
+            UserId = userId,
+            EventId = eventId,
+            RegistrationDatetime = registrationDatetime
+        });
     }
 }
